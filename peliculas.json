@@ -1,0 +1,3248 @@
+[
+  {
+    "numero":536,
+    "titulo":"10000",
+    "nota":"",
+    "titulo_norm":"10000"
+  },
+  {
+    "numero":1,
+    "titulo":"12 MONOS",
+    "nota":"",
+    "titulo_norm":"12 monos"
+  },
+  {
+    "numero":525,
+    "titulo":"13 ROSAS",
+    "nota":"",
+    "titulo_norm":"13 rosas"
+  },
+  {
+    "numero":2,
+    "titulo":"1492, LA CONQUISTA DEL PARAISO",
+    "nota":"",
+    "titulo_norm":"1492 la conquista del paraiso"
+  },
+  {
+    "numero":474,
+    "titulo":"16 CALLES",
+    "nota":"",
+    "titulo_norm":"16 calles"
+  },
+  {
+    "numero":3,
+    "titulo":"2001, UNA ODISEA EN EL ESPACIO",
+    "nota":"",
+    "titulo_norm":"2001 una odisea en el espacio"
+  },
+  {
+    "numero":4,
+    "titulo":"24 HORAS",
+    "nota":"",
+    "titulo_norm":"24 horas"
+  },
+  {
+    "numero":5,
+    "titulo":"3 REYES",
+    "nota":"",
+    "titulo_norm":"3 reyes"
+  },
+  {
+    "numero":449,
+    "titulo":"300",
+    "nota":"EXTRAS",
+    "titulo_norm":"300"
+  },
+  {
+    "numero":448,
+    "titulo":"300",
+    "nota":"",
+    "titulo_norm":"300"
+  },
+  {
+    "numero":450,
+    "titulo":"300",
+    "nota":"CONTENIDO ADICIONAL",
+    "titulo_norm":"300"
+  },
+  {
+    "numero":6,
+    "titulo":"7 SEGUNDOS",
+    "nota":"",
+    "titulo_norm":"7 segundos"
+  },
+  {
+    "numero":7,
+    "titulo":"7 VIRGENES",
+    "nota":"",
+    "titulo_norm":"7 virgenes"
+  },
+  {
+    "numero":8,
+    "titulo":"A CUALQUIER OTRO LUGAR",
+    "nota":"",
+    "titulo_norm":"a cualquier otro lugar"
+  },
+  {
+    "numero":483,
+    "titulo":"A TODO GAS",
+    "nota":"",
+    "titulo_norm":"a todo gas"
+  },
+  {
+    "numero":484,
+    "titulo":"A TODO GAS 2",
+    "nota":"",
+    "titulo_norm":"a todo gas 2"
+  },
+  {
+    "numero":9,
+    "titulo":"ABIERTO HASTA EL AMANECER",
+    "nota":"",
+    "titulo_norm":"abierto hasta el amanecer"
+  },
+  {
+    "numero":10,
+    "titulo":"ACCION CIVIL",
+    "nota":"",
+    "titulo_norm":"accion civil"
+  },
+  {
+    "numero":346,
+    "titulo":"ACORRALADO",
+    "nota":"",
+    "titulo_norm":"acorralado"
+  },
+  {
+    "numero":347,
+    "titulo":"ACORRALADO 2: RAMBO",
+    "nota":"",
+    "titulo_norm":"acorralado 2 rambo"
+  },
+  {
+    "numero":528,
+    "titulo":"ADIOS MUCHAHOS",
+    "nota":"",
+    "titulo_norm":"adios muchahos"
+  },
+  {
+    "numero":11,
+    "titulo":"AGARRALO COMO PUEDAS",
+    "nota":"TRILOGIA",
+    "titulo_norm":"agarralo como puedas"
+  },
+  {
+    "numero":527,
+    "titulo":"AHORA O NUNCA",
+    "nota":"",
+    "titulo_norm":"ahora o nunca"
+  },
+  {
+    "numero":12,
+    "titulo":"AKIRA",
+    "nota":"",
+    "titulo_norm":"akira"
+  },
+  {
+    "numero":13,
+    "titulo":"AL FINAL DE LA ESCALERA",
+    "nota":"",
+    "titulo_norm":"al final de la escalera"
+  },
+  {
+    "numero":14,
+    "titulo":"ALEJANDRO MAGNO",
+    "nota":"",
+    "titulo_norm":"alejandro magno"
+  },
+  {
+    "numero":15,
+    "titulo":"ALGO PASA CON MARY",
+    "nota":"",
+    "titulo_norm":"algo pasa con mary"
+  },
+  {
+    "numero":16,
+    "titulo":"ALGUIEN VOLO SOBRE EL NIDO DEL CUCO",
+    "nota":"",
+    "titulo_norm":"alguien volo sobre el nido del cuco"
+  },
+  {
+    "numero":17,
+    "titulo":"ALGUNOS HOMBRES BUENOS",
+    "nota":"",
+    "titulo_norm":"algunos hombres buenos"
+  },
+  {
+    "numero":24,
+    "titulo":"ALI-G ANDA SUELTO",
+    "nota":"",
+    "titulo_norm":"ali g anda suelto"
+  },
+  {
+    "numero":18,
+    "titulo":"ALIEN",
+    "nota":"",
+    "titulo_norm":"alien"
+  },
+  {
+    "numero":19,
+    "titulo":"ALIEN 2",
+    "nota":"",
+    "titulo_norm":"alien 2"
+  },
+  {
+    "numero":20,
+    "titulo":"ALIEN 3",
+    "nota":"",
+    "titulo_norm":"alien 3"
+  },
+  {
+    "numero":21,
+    "titulo":"ALIEN 4",
+    "nota":"",
+    "titulo_norm":"alien 4"
+  },
+  {
+    "numero":22,
+    "titulo":"ALIEN 5",
+    "nota":"",
+    "titulo_norm":"alien 5"
+  },
+  {
+    "numero":23,
+    "titulo":"ALIEN VS PREDATOR",
+    "nota":"",
+    "titulo_norm":"alien vs predator"
+  },
+  {
+    "numero":25,
+    "titulo":"AMADEUS",
+    "nota":"",
+    "titulo_norm":"amadeus"
+  },
+  {
+    "numero":26,
+    "titulo":"AMEN",
+    "nota":"",
+    "titulo_norm":"amen"
+  },
+  {
+    "numero":27,
+    "titulo":"AMERICAN BEAUTY",
+    "nota":"",
+    "titulo_norm":"american beauty"
+  },
+  {
+    "numero":28,
+    "titulo":"AMERICAN HISTORY X",
+    "nota":"",
+    "titulo_norm":"american history x"
+  },
+  {
+    "numero":29,
+    "titulo":"ANIMATRIX",
+    "nota":"",
+    "titulo_norm":"animatrix"
+  },
+  {
+    "numero":30,
+    "titulo":"APOCALIYSIS NOW",
+    "nota":"",
+    "titulo_norm":"apocaliysis now"
+  },
+  {
+    "numero":445,
+    "titulo":"APOCALYPTO",
+    "nota":"",
+    "titulo_norm":"apocalypto"
+  },
+  {
+    "numero":31,
+    "titulo":"ARAHAN",
+    "nota":"",
+    "titulo_norm":"arahan"
+  },
+  {
+    "numero":32,
+    "titulo":"ASESINOS",
+    "nota":"",
+    "titulo_norm":"asesinos"
+  },
+  {
+    "numero":33,
+    "titulo":"ATRAPAME SI PUEDES",
+    "nota":"",
+    "titulo_norm":"atrapame si puedes"
+  },
+  {
+    "numero":34,
+    "titulo":"AZUMI",
+    "nota":"",
+    "titulo_norm":"azumi"
+  },
+  {
+    "numero":35,
+    "titulo":"BACK BEAT",
+    "nota":"",
+    "titulo_norm":"back beat"
+  },
+  {
+    "numero":36,
+    "titulo":"BAILANDO CON LOBOS",
+    "nota":"",
+    "titulo_norm":"bailando con lobos"
+  },
+  {
+    "numero":37,
+    "titulo":"BAILANDO CON LOBOS",
+    "nota":"EXTRAS",
+    "titulo_norm":"bailando con lobos"
+  },
+  {
+    "numero":38,
+    "titulo":"BENHUR",
+    "nota":"DISCO 1",
+    "titulo_norm":"benhur"
+  },
+  {
+    "numero":39,
+    "titulo":"BENHUR",
+    "nota":"DISCO 2",
+    "titulo_norm":"benhur"
+  },
+  {
+    "numero":40,
+    "titulo":"BIG FISH",
+    "nota":"",
+    "titulo_norm":"big fish"
+  },
+  {
+    "numero":41,
+    "titulo":"BLACK HAWQ DERRIBADO",
+    "nota":"",
+    "titulo_norm":"black hawq derribado"
+  },
+  {
+    "numero":42,
+    "titulo":"BLADE",
+    "nota":"TRILOGIA",
+    "titulo_norm":"blade"
+  },
+  {
+    "numero":488,
+    "titulo":"BLADE RUNNER",
+    "nota":"",
+    "titulo_norm":"blade runner"
+  },
+  {
+    "numero":43,
+    "titulo":"BLADE TRINITY",
+    "nota":"",
+    "titulo_norm":"blade trinity"
+  },
+  {
+    "numero":44,
+    "titulo":"BONES",
+    "nota":"",
+    "titulo_norm":"bones"
+  },
+  {
+    "numero":45,
+    "titulo":"BOOGEYMAN",
+    "nota":"",
+    "titulo_norm":"boogeyman"
+  },
+  {
+    "numero":46,
+    "titulo":"BRAVEHEART",
+    "nota":"",
+    "titulo_norm":"braveheart"
+  },
+  {
+    "numero":47,
+    "titulo":"BRAVEHEART",
+    "nota":"EXTRAS",
+    "titulo_norm":"braveheart"
+  },
+  {
+    "numero":48,
+    "titulo":"BRIGADA 19",
+    "nota":"",
+    "titulo_norm":"brigada 19"
+  },
+  {
+    "numero":49,
+    "titulo":"CABARET",
+    "nota":"",
+    "titulo_norm":"cabaret"
+  },
+  {
+    "numero":50,
+    "titulo":"CADENA PERPETUA",
+    "nota":"",
+    "titulo_norm":"cadena perpetua"
+  },
+  {
+    "numero":51,
+    "titulo":"CAMINO A LA PERDICION",
+    "nota":"",
+    "titulo_norm":"camino a la perdicion"
+  },
+  {
+    "numero":52,
+    "titulo":"CANDILEJAS",
+    "nota":"",
+    "titulo_norm":"candilejas"
+  },
+  {
+    "numero":53,
+    "titulo":"CARMEN",
+    "nota":"",
+    "titulo_norm":"carmen"
+  },
+  {
+    "numero":54,
+    "titulo":"CARRIE",
+    "nota":"",
+    "titulo_norm":"carrie"
+  },
+  {
+    "numero":55,
+    "titulo":"CARTAS DESDE IWOJIMA",
+    "nota":"",
+    "titulo_norm":"cartas desde iwojima"
+  },
+  {
+    "numero":56,
+    "titulo":"CATWOMAN",
+    "nota":"",
+    "titulo_norm":"catwoman"
+  },
+  {
+    "numero":57,
+    "titulo":"CAZADORES DE MENTES",
+    "nota":"",
+    "titulo_norm":"cazadores de mentes"
+  },
+  {
+    "numero":501,
+    "titulo":"CEMENTERIO VIVIENTE",
+    "nota":"",
+    "titulo_norm":"cementerio viviente"
+  },
+  {
+    "numero":516,
+    "titulo":"CHACAL",
+    "nota":"",
+    "titulo_norm":"chacal"
+  },
+  {
+    "numero":58,
+    "titulo":"CHICAGO",
+    "nota":"",
+    "titulo_norm":"chicago"
+  },
+  {
+    "numero":59,
+    "titulo":"CINDIRELLA MAN",
+    "nota":"",
+    "titulo_norm":"cindirella man"
+  },
+  {
+    "numero":60,
+    "titulo":"CINEMA PARADISE",
+    "nota":"",
+    "titulo_norm":"cinema paradise"
+  },
+  {
+    "numero":61,
+    "titulo":"COBRA",
+    "nota":"",
+    "titulo_norm":"cobra"
+  },
+  {
+    "numero":504,
+    "titulo":"COCOON",
+    "nota":"",
+    "titulo_norm":"cocoon"
+  },
+  {
+    "numero":62,
+    "titulo":"COLLATERAL",
+    "nota":"",
+    "titulo_norm":"collateral"
+  },
+  {
+    "numero":464,
+    "titulo":"COMMANDO",
+    "nota":"",
+    "titulo_norm":"commando"
+  },
+  {
+    "numero":63,
+    "titulo":"COMO DIOS",
+    "nota":"",
+    "titulo_norm":"como dios"
+  },
+  {
+    "numero":64,
+    "titulo":"CONAN EL BARBARO",
+    "nota":"",
+    "titulo_norm":"conan el barbaro"
+  },
+  {
+    "numero":65,
+    "titulo":"CONAN EL DESTRUCTOR",
+    "nota":"",
+    "titulo_norm":"conan el destructor"
+  },
+  {
+    "numero":66,
+    "titulo":"CONDENADO",
+    "nota":"",
+    "titulo_norm":"condenado"
+  },
+  {
+    "numero":68,
+    "titulo":"CONSTANTINE",
+    "nota":"EXTRAS",
+    "titulo_norm":"constantine"
+  },
+  {
+    "numero":67,
+    "titulo":"CONSTANTINE",
+    "nota":"",
+    "titulo_norm":"constantine"
+  },
+  {
+    "numero":69,
+    "titulo":"CONTACT",
+    "nota":"",
+    "titulo_norm":"contact"
+  },
+  {
+    "numero":495,
+    "titulo":"CORTOCIRCUITO",
+    "nota":"",
+    "titulo_norm":"cortocircuito"
+  },
+  {
+    "numero":462,
+    "titulo":"CORTOCIRCUITO",
+    "nota":"",
+    "titulo_norm":"cortocircuito"
+  },
+  {
+    "numero":70,
+    "titulo":"COULD MOUNTAIN",
+    "nota":"",
+    "titulo_norm":"could mountain"
+  },
+  {
+    "numero":71,
+    "titulo":"CRIMEN FERPECTO",
+    "nota":"",
+    "titulo_norm":"crimen ferpecto"
+  },
+  {
+    "numero":72,
+    "titulo":"CUANDO ERAMOS SOLDADOS",
+    "nota":"",
+    "titulo_norm":"cuando eramos soldados"
+  },
+  {
+    "numero":73,
+    "titulo":"DARK WATER",
+    "nota":"",
+    "titulo_norm":"dark water"
+  },
+  {
+    "numero":74,
+    "titulo":"DE BODA EN BODA",
+    "nota":"",
+    "titulo_norm":"de boda en boda"
+  },
+  {
+    "numero":75,
+    "titulo":"DEJAVU",
+    "nota":"",
+    "titulo_norm":"dejavu"
+  },
+  {
+    "numero":76,
+    "titulo":"DEPREDADOR",
+    "nota":"",
+    "titulo_norm":"depredador"
+  },
+  {
+    "numero":77,
+    "titulo":"DEPREDADOR 2",
+    "nota":"",
+    "titulo_norm":"depredador 2"
+  },
+  {
+    "numero":78,
+    "titulo":"DESAFIO TOTAL",
+    "nota":"",
+    "titulo_norm":"desafio total"
+  },
+  {
+    "numero":79,
+    "titulo":"DESPERTARES",
+    "nota":"",
+    "titulo_norm":"despertares"
+  },
+  {
+    "numero":534,
+    "titulo":"DESPIERTO",
+    "nota":"",
+    "titulo_norm":"despierto"
+  },
+  {
+    "numero":80,
+    "titulo":"DI QUE SI",
+    "nota":"",
+    "titulo_norm":"di que si"
+  },
+  {
+    "numero":81,
+    "titulo":"DIARIO DE MOTOCICLETA",
+    "nota":"",
+    "titulo_norm":"diario de motocicleta"
+  },
+  {
+    "numero":82,
+    "titulo":"DIRTY DANCING",
+    "nota":"",
+    "titulo_norm":"dirty dancing"
+  },
+  {
+    "numero":83,
+    "titulo":"DOCE DEL PATIBULO",
+    "nota":"",
+    "titulo_norm":"doce del patibulo"
+  },
+  {
+    "numero":84,
+    "titulo":"DOCTOR SHIVAGO",
+    "nota":"DISCO 1",
+    "titulo_norm":"doctor shivago"
+  },
+  {
+    "numero":85,
+    "titulo":"DOCTOR SHIVAGO",
+    "nota":"DISCO 2",
+    "titulo_norm":"doctor shivago"
+  },
+  {
+    "numero":86,
+    "titulo":"DOS RUBIAS DE PELO EN PECHO",
+    "nota":"",
+    "titulo_norm":"dos rubias de pelo en pecho"
+  },
+  {
+    "numero":532,
+    "titulo":"DOS TONTOS MUY TONTOS",
+    "nota":"",
+    "titulo_norm":"dos tontos muy tontos"
+  },
+  {
+    "numero":87,
+    "titulo":"DRACULA",
+    "nota":"",
+    "titulo_norm":"dracula"
+  },
+  {
+    "numero":88,
+    "titulo":"E.T.",
+    "nota":"",
+    "titulo_norm":"e t"
+  },
+  {
+    "numero":89,
+    "titulo":"EDUARDO MANOSTIJERAS",
+    "nota":"",
+    "titulo_norm":"eduardo manostijeras"
+  },
+  {
+    "numero":90,
+    "titulo":"EL ALAMO",
+    "nota":"",
+    "titulo_norm":"el alamo"
+  },
+  {
+    "numero":479,
+    "titulo":"EL ASESINATO DE RICHARD NIXON",
+    "nota":"",
+    "titulo_norm":"el asesinato de richard nixon"
+  },
+  {
+    "numero":446,
+    "titulo":"EL AVIADOR",
+    "nota":"",
+    "titulo_norm":"el aviador"
+  },
+  {
+    "numero":91,
+    "titulo":"EL BOSQUE",
+    "nota":"",
+    "titulo_norm":"el bosque"
+  },
+  {
+    "numero":92,
+    "titulo":"EL BUENO, EL FEO Y EL MALO",
+    "nota":"",
+    "titulo_norm":"el bueno el feo y el malo"
+  },
+  {
+    "numero":94,
+    "titulo":"EL CABO DEL MIEDO",
+    "nota":"EXTRAS",
+    "titulo_norm":"el cabo del miedo"
+  },
+  {
+    "numero":93,
+    "titulo":"EL CABO DEL MIEDO",
+    "nota":"",
+    "titulo_norm":"el cabo del miedo"
+  },
+  {
+    "numero":95,
+    "titulo":"EL CARTERO SIEMPRE LLAMA DOS VECES",
+    "nota":"",
+    "titulo_norm":"el cartero siempre llama dos veces"
+  },
+  {
+    "numero":96,
+    "titulo":"EL CASO BOURNE",
+    "nota":"",
+    "titulo_norm":"el caso bourne"
+  },
+  {
+    "numero":97,
+    "titulo":"EL CASTIGADOR",
+    "nota":"",
+    "titulo_norm":"el castigador"
+  },
+  {
+    "numero":472,
+    "titulo":"EL CHIP PRODIGIOSO",
+    "nota":"",
+    "titulo_norm":"el chip prodigioso"
+  },
+  {
+    "numero":98,
+    "titulo":"EL CLUB DE LA LUCHA",
+    "nota":"",
+    "titulo_norm":"el club de la lucha"
+  },
+  {
+    "numero":99,
+    "titulo":"EL CLUB DE LA LUCHA",
+    "nota":"EXTRAS",
+    "titulo_norm":"el club de la lucha"
+  },
+  {
+    "numero":491,
+    "titulo":"EL CLUB DE LOS POETAS MUERTOS",
+    "nota":"",
+    "titulo_norm":"el club de los poetas muertos"
+  },
+  {
+    "numero":480,
+    "titulo":"EL CODIGO DA VINCI",
+    "nota":"",
+    "titulo_norm":"el codigo da vinci"
+  },
+  {
+    "numero":100,
+    "titulo":"EL COLOR DEL DINERO",
+    "nota":"",
+    "titulo_norm":"el color del dinero"
+  },
+  {
+    "numero":461,
+    "titulo":"EL COLOSO EL LLAMAS",
+    "nota":"",
+    "titulo_norm":"el coloso el llamas"
+  },
+  {
+    "numero":101,
+    "titulo":"EL DESPERTAR",
+    "nota":"",
+    "titulo_norm":"el despertar"
+  },
+  {
+    "numero":471,
+    "titulo":"EL DIA D",
+    "nota":"",
+    "titulo_norm":"el dia d"
+  },
+  {
+    "numero":112,
+    "titulo":"EL DIA DE MAÑANA",
+    "nota":"",
+    "titulo_norm":"el dia de manana"
+  },
+  {
+    "numero":102,
+    "titulo":"EL DIA MAS LARGO",
+    "nota":"",
+    "titulo_norm":"el dia mas largo"
+  },
+  {
+    "numero":103,
+    "titulo":"EL DIARIO DE BRIGET JONES",
+    "nota":"",
+    "titulo_norm":"el diario de briget jones"
+  },
+  {
+    "numero":104,
+    "titulo":"EL DIARIO DE BRIGET JONES 2",
+    "nota":"",
+    "titulo_norm":"el diario de briget jones 2"
+  },
+  {
+    "numero":490,
+    "titulo":"EL DIARIO DE ELLENRIMBAUER",
+    "nota":"",
+    "titulo_norm":"el diario de ellenrimbauer"
+  },
+  {
+    "numero":105,
+    "titulo":"EL DIARIO DE NOA",
+    "nota":"",
+    "titulo_norm":"el diario de noa"
+  },
+  {
+    "numero":106,
+    "titulo":"EL DIARIO DE UN SKIN",
+    "nota":"",
+    "titulo_norm":"el diario de un skin"
+  },
+  {
+    "numero":107,
+    "titulo":"EL EFECTO MARIPOSA",
+    "nota":"",
+    "titulo_norm":"el efecto mariposa"
+  },
+  {
+    "numero":487,
+    "titulo":"EL EFECTO MARIPOSA 2",
+    "nota":"",
+    "titulo_norm":"el efecto mariposa 2"
+  },
+  {
+    "numero":150,
+    "titulo":"EL EN ESTANQUE DORADO",
+    "nota":"",
+    "titulo_norm":"el en estanque dorado"
+  },
+  {
+    "numero":108,
+    "titulo":"EL ESCONDITE",
+    "nota":"",
+    "titulo_norm":"el escondite"
+  },
+  {
+    "numero":109,
+    "titulo":"EL EXORSISTA (EL COMIENZO)",
+    "nota":"",
+    "titulo_norm":"el exorsista el comienzo"
+  },
+  {
+    "numero":110,
+    "titulo":"EL EXPRESO DE MEDIANOCHE",
+    "nota":"",
+    "titulo_norm":"el expreso de medianoche"
+  },
+  {
+    "numero":111,
+    "titulo":"EL FANTASMA DE LA OPERA",
+    "nota":"",
+    "titulo_norm":"el fantasma de la opera"
+  },
+  {
+    "numero":113,
+    "titulo":"EL FUEGO DE LA VENGANZA",
+    "nota":"",
+    "titulo_norm":"el fuego de la venganza"
+  },
+  {
+    "numero":499,
+    "titulo":"EL GOLPE",
+    "nota":"",
+    "titulo_norm":"el golpe"
+  },
+  {
+    "numero":114,
+    "titulo":"EL GRADUADO",
+    "nota":"",
+    "titulo_norm":"el graduado"
+  },
+  {
+    "numero":115,
+    "titulo":"EL GRAN DICTADOR",
+    "nota":"",
+    "titulo_norm":"el gran dictador"
+  },
+  {
+    "numero":116,
+    "titulo":"EL GRAN GOLPE",
+    "nota":"",
+    "titulo_norm":"el gran golpe"
+  },
+  {
+    "numero":117,
+    "titulo":"EL GRAN HALCON",
+    "nota":"",
+    "titulo_norm":"el gran halcon"
+  },
+  {
+    "numero":118,
+    "titulo":"EL HOMBRE SIN SOMBRA",
+    "nota":"",
+    "titulo_norm":"el hombre sin sombra"
+  },
+  {
+    "numero":119,
+    "titulo":"EL HUNDIMIENTO",
+    "nota":"",
+    "titulo_norm":"el hundimiento"
+  },
+  {
+    "numero":489,
+    "titulo":"EL IMPERIO DEL SOL",
+    "nota":"",
+    "titulo_norm":"el imperio del sol"
+  },
+  {
+    "numero":120,
+    "titulo":"EL INTERNADO",
+    "nota":"",
+    "titulo_norm":"el internado"
+  },
+  {
+    "numero":121,
+    "titulo":"EL JUEGO DE RIPLEY",
+    "nota":"",
+    "titulo_norm":"el juego de ripley"
+  },
+  {
+    "numero":498,
+    "titulo":"EL LABERINTO DEL FAUNO",
+    "nota":"",
+    "titulo_norm":"el laberinto del fauno"
+  },
+  {
+    "numero":122,
+    "titulo":"EL LOBO",
+    "nota":"",
+    "titulo_norm":"el lobo"
+  },
+  {
+    "numero":123,
+    "titulo":"EL MAQUINISTA",
+    "nota":"",
+    "titulo_norm":"el maquinista"
+  },
+  {
+    "numero":459,
+    "titulo":"EL MITO DE BOURNE",
+    "nota":"",
+    "titulo_norm":"el mito de bourne"
+  },
+  {
+    "numero":515,
+    "titulo":"EL NOMBRE DE LA ROSA",
+    "nota":"",
+    "titulo_norm":"el nombre de la rosa"
+  },
+  {
+    "numero":124,
+    "titulo":"EL PIANISTA",
+    "nota":"",
+    "titulo_norm":"el pianista"
+  },
+  {
+    "numero":125,
+    "titulo":"EL PIANO",
+    "nota":"",
+    "titulo_norm":"el piano"
+  },
+  {
+    "numero":507,
+    "titulo":"EL PLANETA DE LOS SIMIOS 1",
+    "nota":"",
+    "titulo_norm":"el planeta de los simios 1"
+  },
+  {
+    "numero":508,
+    "titulo":"EL PLANETA DE LOS SIMIOS 2",
+    "nota":"",
+    "titulo_norm":"el planeta de los simios 2"
+  },
+  {
+    "numero":126,
+    "titulo":"EL PLANETA DE LOS SIMIOS (2001)",
+    "nota":"",
+    "titulo_norm":"el planeta de los simios 2001"
+  },
+  {
+    "numero":509,
+    "titulo":"EL PLANETA DE LOS SIMIOS 3",
+    "nota":"",
+    "titulo_norm":"el planeta de los simios 3"
+  },
+  {
+    "numero":510,
+    "titulo":"EL PLANETA DE LOS SIMIOS 4",
+    "nota":"",
+    "titulo_norm":"el planeta de los simios 4"
+  },
+  {
+    "numero":511,
+    "titulo":"EL PLANETA DE LOS SIMIOS 5",
+    "nota":"",
+    "titulo_norm":"el planeta de los simios 5"
+  },
+  {
+    "numero":514,
+    "titulo":"EL PROFESOR CHIFLADO 2",
+    "nota":"",
+    "titulo_norm":"el profesor chiflado 2"
+  },
+  {
+    "numero":127,
+    "titulo":"EL PROTEGIDO",
+    "nota":"",
+    "titulo_norm":"el protegido"
+  },
+  {
+    "numero":128,
+    "titulo":"EL QUINTO ELEMENTO",
+    "nota":"",
+    "titulo_norm":"el quinto elemento"
+  },
+  {
+    "numero":129,
+    "titulo":"EL QUINTO ELEMENTO",
+    "nota":"EXTRAS",
+    "titulo_norm":"el quinto elemento"
+  },
+  {
+    "numero":130,
+    "titulo":"EL REINO DE LOS CIELOS",
+    "nota":"",
+    "titulo_norm":"el reino de los cielos"
+  },
+  {
+    "numero":131,
+    "titulo":"EL REY ARTURO",
+    "nota":"",
+    "titulo_norm":"el rey arturo"
+  },
+  {
+    "numero":132,
+    "titulo":"EL REY PESCADOR",
+    "nota":"",
+    "titulo_norm":"el rey pescador"
+  },
+  {
+    "numero":539,
+    "titulo":"EL SECRETO DE LA PIRAMIDE",
+    "nota":"",
+    "titulo_norm":"el secreto de la piramide"
+  },
+  {
+    "numero":133,
+    "titulo":"EL SEÑOR DE LOS ANILLOS 1 (DISCO 1)",
+    "nota":"",
+    "titulo_norm":"el senor de los anillos 1 disco 1"
+  },
+  {
+    "numero":134,
+    "titulo":"EL SEÑOR DE LOS ANILLOS 1 (DISCO 2)",
+    "nota":"",
+    "titulo_norm":"el senor de los anillos 1 disco 2"
+  },
+  {
+    "numero":135,
+    "titulo":"EL SEÑOR DE LOS ANILLOS 2 (DISCO 1)",
+    "nota":"",
+    "titulo_norm":"el senor de los anillos 2 disco 1"
+  },
+  {
+    "numero":136,
+    "titulo":"EL SEÑOR DE LOS ANILLOS 2 (DISCO 2)",
+    "nota":"",
+    "titulo_norm":"el senor de los anillos 2 disco 2"
+  },
+  {
+    "numero":137,
+    "titulo":"EL SEÑOR DE LOS ANILLOS 3 (DISCO 1)",
+    "nota":"",
+    "titulo_norm":"el senor de los anillos 3 disco 1"
+  },
+  {
+    "numero":138,
+    "titulo":"EL SEÑOR DE LOS ANILLOS 3 (DISCO 2)",
+    "nota":"",
+    "titulo_norm":"el senor de los anillos 3 disco 2"
+  },
+  {
+    "numero":140,
+    "titulo":"EL SEXTO SENTIDO",
+    "nota":"",
+    "titulo_norm":"el sexto sentido"
+  },
+  {
+    "numero":139,
+    "titulo":"EL SEXTO SENTIDO",
+    "nota":"",
+    "titulo_norm":"el sexto sentido"
+  },
+  {
+    "numero":141,
+    "titulo":"EL SILENCIO DE LOS CORDEROS 1",
+    "nota":"",
+    "titulo_norm":"el silencio de los corderos 1"
+  },
+  {
+    "numero":142,
+    "titulo":"EL SILENCIO DE LOS CORDEROS 2",
+    "nota":"",
+    "titulo_norm":"el silencio de los corderos 2"
+  },
+  {
+    "numero":143,
+    "titulo":"EL SILENCIO DE LOS CORDEROS 3",
+    "nota":"",
+    "titulo_norm":"el silencio de los corderos 3"
+  },
+  {
+    "numero":144,
+    "titulo":"EL SILENCIO DE LOS CORDEROS 4",
+    "nota":"",
+    "titulo_norm":"el silencio de los corderos 4"
+  },
+  {
+    "numero":145,
+    "titulo":"EL SONIDO DEL TRUENO",
+    "nota":"",
+    "titulo_norm":"el sonido del trueno"
+  },
+  {
+    "numero":519,
+    "titulo":"EL TRUCO FINAL",
+    "nota":"",
+    "titulo_norm":"el truco final"
+  },
+  {
+    "numero":146,
+    "titulo":"EL ULTIMO ESCALON",
+    "nota":"",
+    "titulo_norm":"el ultimo escalon"
+  },
+  {
+    "numero":147,
+    "titulo":"EL ULTIMO MOHICANO",
+    "nota":"",
+    "titulo_norm":"el ultimo mohicano"
+  },
+  {
+    "numero":148,
+    "titulo":"EL ULTIMO SAMURAI",
+    "nota":"",
+    "titulo_norm":"el ultimo samurai"
+  },
+  {
+    "numero":149,
+    "titulo":"ELEGIR UN AMOR",
+    "nota":"",
+    "titulo_norm":"elegir un amor"
+  },
+  {
+    "numero":535,
+    "titulo":"EN BUSCA DE LA FELICIDAD",
+    "nota":"",
+    "titulo_norm":"en busca de la felicidad"
+  },
+  {
+    "numero":151,
+    "titulo":"EN LA OSCURIDAD",
+    "nota":"",
+    "titulo_norm":"en la oscuridad"
+  },
+  {
+    "numero":152,
+    "titulo":"EN LA TINIEBLA",
+    "nota":"",
+    "titulo_norm":"en la tiniebla"
+  },
+  {
+    "numero":153,
+    "titulo":"ENCERRADO",
+    "nota":"",
+    "titulo_norm":"encerrado"
+  },
+  {
+    "numero":494,
+    "titulo":"ENCUENTROS EN LA 3ª FASE",
+    "nota":"",
+    "titulo_norm":"encuentros en la 3 fase"
+  },
+  {
+    "numero":154,
+    "titulo":"ENEMIGO A LAS PUERTAS",
+    "nota":"",
+    "titulo_norm":"enemigo a las puertas"
+  },
+  {
+    "numero":155,
+    "titulo":"ENEMIGO PUBLICO",
+    "nota":"",
+    "titulo_norm":"enemigo publico"
+  },
+  {
+    "numero":156,
+    "titulo":"ENIGMA",
+    "nota":"",
+    "titulo_norm":"enigma"
+  },
+  {
+    "numero":157,
+    "titulo":"ENTREVISTA CON EL VAMPIRO",
+    "nota":"",
+    "titulo_norm":"entrevista con el vampiro"
+  },
+  {
+    "numero":158,
+    "titulo":"ERIN BROCKOVICH",
+    "nota":"",
+    "titulo_norm":"erin brockovich"
+  },
+  {
+    "numero":159,
+    "titulo":"ESTOY HECHO UN ANIMAL",
+    "nota":"",
+    "titulo_norm":"estoy hecho un animal"
+  },
+  {
+    "numero":160,
+    "titulo":"EVIL DEAD",
+    "nota":"TRILOGIA",
+    "titulo_norm":"evil dead"
+  },
+  {
+    "numero":161,
+    "titulo":"FALSA IDENTIDAD",
+    "nota":"",
+    "titulo_norm":"falsa identidad"
+  },
+  {
+    "numero":162,
+    "titulo":"FALSAS APARIENCIAS",
+    "nota":"",
+    "titulo_norm":"falsas apariencias"
+  },
+  {
+    "numero":163,
+    "titulo":"FBI",
+    "nota":"",
+    "titulo_norm":"fbi"
+  },
+  {
+    "numero":164,
+    "titulo":"FINAL FANTASY",
+    "nota":"",
+    "titulo_norm":"final fantasy"
+  },
+  {
+    "numero":165,
+    "titulo":"FLASH DANCE",
+    "nota":"",
+    "titulo_norm":"flash dance"
+  },
+  {
+    "numero":167,
+    "titulo":"FORREST GUMP",
+    "nota":"EXTRAS",
+    "titulo_norm":"forrest gump"
+  },
+  {
+    "numero":166,
+    "titulo":"FORREST GUMP",
+    "nota":"",
+    "titulo_norm":"forrest gump"
+  },
+  {
+    "numero":168,
+    "titulo":"FRAGILES",
+    "nota":"",
+    "titulo_norm":"fragiles"
+  },
+  {
+    "numero":169,
+    "titulo":"GANSTERS DE NEW YORK",
+    "nota":"",
+    "titulo_norm":"gansters de new york"
+  },
+  {
+    "numero":537,
+    "titulo":"GATTACA",
+    "nota":"",
+    "titulo_norm":"gattaca"
+  },
+  {
+    "numero":170,
+    "titulo":"GENESIS",
+    "nota":"",
+    "titulo_norm":"genesis"
+  },
+  {
+    "numero":171,
+    "titulo":"GET CARTER",
+    "nota":"",
+    "titulo_norm":"get carter"
+  },
+  {
+    "numero":172,
+    "titulo":"GHOST",
+    "nota":"",
+    "titulo_norm":"ghost"
+  },
+  {
+    "numero":173,
+    "titulo":"GHOST IN THE SHELL 1",
+    "nota":"",
+    "titulo_norm":"ghost in the shell 1"
+  },
+  {
+    "numero":174,
+    "titulo":"GHOST IN THE SHELL 2",
+    "nota":"",
+    "titulo_norm":"ghost in the shell 2"
+  },
+  {
+    "numero":175,
+    "titulo":"GHOTICA",
+    "nota":"",
+    "titulo_norm":"ghotica"
+  },
+  {
+    "numero":176,
+    "titulo":"GIGOLO",
+    "nota":"",
+    "titulo_norm":"gigolo"
+  },
+  {
+    "numero":177,
+    "titulo":"GLADIATOR",
+    "nota":"",
+    "titulo_norm":"gladiator"
+  },
+  {
+    "numero":533,
+    "titulo":"GOLPE EN LA PEQUEÑA CHINA",
+    "nota":"",
+    "titulo_norm":"golpe en la pequena china"
+  },
+  {
+    "numero":452,
+    "titulo":"GOOD MORNING, VIETMAN",
+    "nota":"",
+    "titulo_norm":"good morning vietman"
+  },
+  {
+    "numero":178,
+    "titulo":"GORRILAS EN LA NIEBLA",
+    "nota":"",
+    "titulo_norm":"gorrilas en la niebla"
+  },
+  {
+    "numero":179,
+    "titulo":"GREASE",
+    "nota":"",
+    "titulo_norm":"grease"
+  },
+  {
+    "numero":180,
+    "titulo":"GREMLINS",
+    "nota":"",
+    "titulo_norm":"gremlins"
+  },
+  {
+    "numero":181,
+    "titulo":"HARRY POTTER 1",
+    "nota":"",
+    "titulo_norm":"harry potter 1"
+  },
+  {
+    "numero":182,
+    "titulo":"HARRY POTTER 2",
+    "nota":"",
+    "titulo_norm":"harry potter 2"
+  },
+  {
+    "numero":183,
+    "titulo":"HARRY POTTER 3",
+    "nota":"",
+    "titulo_norm":"harry potter 3"
+  },
+  {
+    "numero":184,
+    "titulo":"HECHIZO DEL CORAZON",
+    "nota":"",
+    "titulo_norm":"hechizo del corazon"
+  },
+  {
+    "numero":185,
+    "titulo":"HELL BOY",
+    "nota":"",
+    "titulo_norm":"hell boy"
+  },
+  {
+    "numero":186,
+    "titulo":"HERMANOS DE SANGRE 1",
+    "nota":"",
+    "titulo_norm":"hermanos de sangre 1"
+  },
+  {
+    "numero":187,
+    "titulo":"HERMANOS DE SANGRE 2",
+    "nota":"",
+    "titulo_norm":"hermanos de sangre 2"
+  },
+  {
+    "numero":188,
+    "titulo":"HERMANOS DE SANGRE 3",
+    "nota":"",
+    "titulo_norm":"hermanos de sangre 3"
+  },
+  {
+    "numero":189,
+    "titulo":"HERMANOS DE SANGRE 4",
+    "nota":"",
+    "titulo_norm":"hermanos de sangre 4"
+  },
+  {
+    "numero":190,
+    "titulo":"HERMANOS DE SANGRE 5",
+    "nota":"",
+    "titulo_norm":"hermanos de sangre 5"
+  },
+  {
+    "numero":191,
+    "titulo":"HERMANOS DE SANGRE 6",
+    "nota":"",
+    "titulo_norm":"hermanos de sangre 6"
+  },
+  {
+    "numero":192,
+    "titulo":"HEROE A RAYAS",
+    "nota":"",
+    "titulo_norm":"heroe a rayas"
+  },
+  {
+    "numero":193,
+    "titulo":"HITLER, EL REINADO DEL MAL",
+    "nota":"",
+    "titulo_norm":"hitler el reinado del mal"
+  },
+  {
+    "numero":194,
+    "titulo":"HOMBRES DE HONOR",
+    "nota":"",
+    "titulo_norm":"hombres de honor"
+  },
+  {
+    "numero":481,
+    "titulo":"HOOK",
+    "nota":"",
+    "titulo_norm":"hook"
+  },
+  {
+    "numero":195,
+    "titulo":"HORAS DE LUZ",
+    "nota":"",
+    "titulo_norm":"horas de luz"
+  },
+  {
+    "numero":196,
+    "titulo":"HOSTAGE",
+    "nota":"",
+    "titulo_norm":"hostage"
+  },
+  {
+    "numero":197,
+    "titulo":"HULK",
+    "nota":"",
+    "titulo_norm":"hulk"
+  },
+  {
+    "numero":198,
+    "titulo":"INFIEL",
+    "nota":"",
+    "titulo_norm":"infiel"
+  },
+  {
+    "numero":199,
+    "titulo":"INFILTRADOS",
+    "nota":"",
+    "titulo_norm":"infiltrados"
+  },
+  {
+    "numero":200,
+    "titulo":"INMERSION LETAL",
+    "nota":"",
+    "titulo_norm":"inmersion letal"
+  },
+  {
+    "numero":201,
+    "titulo":"INSTINTO BASICO",
+    "nota":"",
+    "titulo_norm":"instinto basico"
+  },
+  {
+    "numero":202,
+    "titulo":"INSTINTO BASICO 2",
+    "nota":"",
+    "titulo_norm":"instinto basico 2"
+  },
+  {
+    "numero":203,
+    "titulo":"INTELIGENCIA ARTIFICIAL",
+    "nota":"",
+    "titulo_norm":"inteligencia artificial"
+  },
+  {
+    "numero":540,
+    "titulo":"IRONMAN",
+    "nota":"",
+    "titulo_norm":"ironman"
+  },
+  {
+    "numero":204,
+    "titulo":"IT",
+    "nota":"",
+    "titulo_norm":"it"
+  },
+  {
+    "numero":205,
+    "titulo":"JEEPERS CREEPERS",
+    "nota":"",
+    "titulo_norm":"jeepers creepers"
+  },
+  {
+    "numero":206,
+    "titulo":"JEEPERS CREEPERS 2",
+    "nota":"",
+    "titulo_norm":"jeepers creepers 2"
+  },
+  {
+    "numero":207,
+    "titulo":"JERRY MAGUIRE",
+    "nota":"",
+    "titulo_norm":"jerry maguire"
+  },
+  {
+    "numero":518,
+    "titulo":"JESUCRISTO SUPERSTAR",
+    "nota":"",
+    "titulo_norm":"jesucristo superstar"
+  },
+  {
+    "numero":211,
+    "titulo":"JESUS DE NAZARET",
+    "nota":"DISCO 4",
+    "titulo_norm":"jesus de nazaret"
+  },
+  {
+    "numero":210,
+    "titulo":"JESUS DE NAZARET",
+    "nota":"DISCO 3",
+    "titulo_norm":"jesus de nazaret"
+  },
+  {
+    "numero":209,
+    "titulo":"JESUS DE NAZARET",
+    "nota":"DISCO 2",
+    "titulo_norm":"jesus de nazaret"
+  },
+  {
+    "numero":208,
+    "titulo":"JESUS DE NAZARET",
+    "nota":"DISCO 1",
+    "titulo_norm":"jesus de nazaret"
+  },
+  {
+    "numero":212,
+    "titulo":"JOHN Q",
+    "nota":"",
+    "titulo_norm":"john q"
+  },
+  {
+    "numero":521,
+    "titulo":"JOHN RAMBO",
+    "nota":"",
+    "titulo_norm":"john rambo"
+  },
+  {
+    "numero":213,
+    "titulo":"JUANA DE ARCO",
+    "nota":"",
+    "titulo_norm":"juana de arco"
+  },
+  {
+    "numero":214,
+    "titulo":"JUANA LA LOCA",
+    "nota":"",
+    "titulo_norm":"juana la loca"
+  },
+  {
+    "numero":215,
+    "titulo":"JUMANJI",
+    "nota":"",
+    "titulo_norm":"jumanji"
+  },
+  {
+    "numero":523,
+    "titulo":"JUMPER",
+    "nota":"",
+    "titulo_norm":"jumper"
+  },
+  {
+    "numero":216,
+    "titulo":"KICKBOXER",
+    "nota":"",
+    "titulo_norm":"kickboxer"
+  },
+  {
+    "numero":457,
+    "titulo":"KILL BILL 1",
+    "nota":"",
+    "titulo_norm":"kill bill 1"
+  },
+  {
+    "numero":458,
+    "titulo":"KILL BILL 2",
+    "nota":"",
+    "titulo_norm":"kill bill 2"
+  },
+  {
+    "numero":217,
+    "titulo":"KING KONG",
+    "nota":"",
+    "titulo_norm":"king kong"
+  },
+  {
+    "numero":218,
+    "titulo":"KUNGFUSION",
+    "nota":"",
+    "titulo_norm":"kungfusion"
+  },
+  {
+    "numero":219,
+    "titulo":"LA 7ª PROFECIA",
+    "nota":"",
+    "titulo_norm":"la 7 profecia"
+  },
+  {
+    "numero":220,
+    "titulo":"LA AMENAZA INVISIBLE",
+    "nota":"",
+    "titulo_norm":"la amenaza invisible"
+  },
+  {
+    "numero":221,
+    "titulo":"LA BANDERA DE NUESTROS PADRES",
+    "nota":"",
+    "titulo_norm":"la bandera de nuestros padres"
+  },
+  {
+    "numero":222,
+    "titulo":"LA BUSQUEDA",
+    "nota":"",
+    "titulo_norm":"la busqueda"
+  },
+  {
+    "numero":224,
+    "titulo":"LA CASA DE LAS DAGAS VOLADORAS",
+    "nota":"",
+    "titulo_norm":"la casa de las dagas voladoras"
+  },
+  {
+    "numero":225,
+    "titulo":"LA CASA DEL LAGO",
+    "nota":"",
+    "titulo_norm":"la casa del lago"
+  },
+  {
+    "numero":226,
+    "titulo":"LA CHAQUETA METALICA",
+    "nota":"",
+    "titulo_norm":"la chaqueta metalica"
+  },
+  {
+    "numero":311,
+    "titulo":"LA CHAQUETA METALICA",
+    "nota":"",
+    "titulo_norm":"la chaqueta metalica"
+  },
+  {
+    "numero":227,
+    "titulo":"LA COLINA DE LA HAMBURGUESA",
+    "nota":"",
+    "titulo_norm":"la colina de la hamburguesa"
+  },
+  {
+    "numero":451,
+    "titulo":"LA COSECHA",
+    "nota":"",
+    "titulo_norm":"la cosecha"
+  },
+  {
+    "numero":228,
+    "titulo":"LA DELGADA LINEA ROJA",
+    "nota":"",
+    "titulo_norm":"la delgada linea roja"
+  },
+  {
+    "numero":229,
+    "titulo":"LA GRAN EVASION",
+    "nota":"",
+    "titulo_norm":"la gran evasion"
+  },
+  {
+    "numero":230,
+    "titulo":"LA GUERRA DE HART",
+    "nota":"",
+    "titulo_norm":"la guerra de hart"
+  },
+  {
+    "numero":231,
+    "titulo":"LA GUERRA DE LOS MUNDOS",
+    "nota":"",
+    "titulo_norm":"la guerra de los mundos"
+  },
+  {
+    "numero":232,
+    "titulo":"LA HABITACION DEL PANICO",
+    "nota":"",
+    "titulo_norm":"la habitacion del panico"
+  },
+  {
+    "numero":233,
+    "titulo":"LA HISTORIA INTERMINABLE",
+    "nota":"",
+    "titulo_norm":"la historia interminable"
+  },
+  {
+    "numero":234,
+    "titulo":"LA INTERPRETE",
+    "nota":"",
+    "titulo_norm":"la interprete"
+  },
+  {
+    "numero":235,
+    "titulo":"LA ISLA",
+    "nota":"",
+    "titulo_norm":"la isla"
+  },
+  {
+    "numero":236,
+    "titulo":"LA JOYA DEL NILO",
+    "nota":"",
+    "titulo_norm":"la joya del nilo"
+  },
+  {
+    "numero":237,
+    "titulo":"LA JUNGLA DE CRISTAL",
+    "nota":"TRILOGIA",
+    "titulo_norm":"la jungla de cristal"
+  },
+  {
+    "numero":238,
+    "titulo":"LA LETRA ESCARLATA",
+    "nota":"",
+    "titulo_norm":"la letra escarlata"
+  },
+  {
+    "numero":239,
+    "titulo":"LA LEYENDA DEL ZORRO",
+    "nota":"",
+    "titulo_norm":"la leyenda del zorro"
+  },
+  {
+    "numero":240,
+    "titulo":"LA LIGA DE LOS HOMBRES EXTRAORDINARIOS",
+    "nota":"",
+    "titulo_norm":"la liga de los hombres extraordinarios"
+  },
+  {
+    "numero":241,
+    "titulo":"LA LISTA DE SHIRDLER",
+    "nota":"DISCO 1",
+    "titulo_norm":"la lista de shirdler"
+  },
+  {
+    "numero":242,
+    "titulo":"LA LISTA DE SHIRDLER",
+    "nota":"DISCO 2",
+    "titulo_norm":"la lista de shirdler"
+  },
+  {
+    "numero":243,
+    "titulo":"LA MALA EDUCACION",
+    "nota":"",
+    "titulo_norm":"la mala educacion"
+  },
+  {
+    "numero":244,
+    "titulo":"LA MALDICION",
+    "nota":"",
+    "titulo_norm":"la maldicion"
+  },
+  {
+    "numero":245,
+    "titulo":"LA MANO QUE MECE LA CUNA",
+    "nota":"",
+    "titulo_norm":"la mano que mece la cuna"
+  },
+  {
+    "numero":246,
+    "titulo":"LA MAQUINA DEL TIEMPO",
+    "nota":"",
+    "titulo_norm":"la maquina del tiempo"
+  },
+  {
+    "numero":247,
+    "titulo":"LA MASCARA DEL ZORRO",
+    "nota":"",
+    "titulo_norm":"la mascara del zorro"
+  },
+  {
+    "numero":248,
+    "titulo":"LA MEMORIA DE LOS MUERTOS",
+    "nota":"",
+    "titulo_norm":"la memoria de los muertos"
+  },
+  {
+    "numero":249,
+    "titulo":"LA MILLA VERDE",
+    "nota":"",
+    "titulo_norm":"la milla verde"
+  },
+  {
+    "numero":250,
+    "titulo":"LA MISION",
+    "nota":"",
+    "titulo_norm":"la mision"
+  },
+  {
+    "numero":251,
+    "titulo":"LA MOMIA",
+    "nota":"TRILOGIA",
+    "titulo_norm":"la momia"
+  },
+  {
+    "numero":252,
+    "titulo":"LA MOSCA",
+    "nota":"",
+    "titulo_norm":"la mosca"
+  },
+  {
+    "numero":253,
+    "titulo":"LA MUERTE TENIA UN PRECIO",
+    "nota":"",
+    "titulo_norm":"la muerte tenia un precio"
+  },
+  {
+    "numero":254,
+    "titulo":"LA NARANJA MECANICA",
+    "nota":"",
+    "titulo_norm":"la naranja mecanica"
+  },
+  {
+    "numero":541,
+    "titulo":"LA NIEBLA",
+    "nota":"",
+    "titulo_norm":"la niebla"
+  },
+  {
+    "numero":538,
+    "titulo":"LA NOCHE DE LOS CRISTALES ROTOS",
+    "nota":"",
+    "titulo_norm":"la noche de los cristales rotos"
+  },
+  {
+    "numero":255,
+    "titulo":"LA NOCHE DE LOS MUERTOS VIVIENTES",
+    "nota":"",
+    "titulo_norm":"la noche de los muertos vivientes"
+  },
+  {
+    "numero":257,
+    "titulo":"LA PASION DE CRISTO",
+    "nota":"",
+    "titulo_norm":"la pasion de cristo"
+  },
+  {
+    "numero":258,
+    "titulo":"LA PROFECIA",
+    "nota":"",
+    "titulo_norm":"la profecia"
+  },
+  {
+    "numero":259,
+    "titulo":"LA QUIMERA DE ORO",
+    "nota":"",
+    "titulo_norm":"la quimera de oro"
+  },
+  {
+    "numero":496,
+    "titulo":"LA SOLUCION FINAL",
+    "nota":"",
+    "titulo_norm":"la solucion final"
+  },
+  {
+    "numero":260,
+    "titulo":"LA TERMINAL",
+    "nota":"",
+    "titulo_norm":"la terminal"
+  },
+  {
+    "numero":261,
+    "titulo":"LA TIERRA DE LOS MUERTOS VIVIENTES",
+    "nota":"",
+    "titulo_norm":"la tierra de los muertos vivientes"
+  },
+  {
+    "numero":262,
+    "titulo":"LA ULTIMA SEÑAL",
+    "nota":"",
+    "titulo_norm":"la ultima senal"
+  },
+  {
+    "numero":263,
+    "titulo":"LA VAQUILLA",
+    "nota":"",
+    "titulo_norm":"la vaquilla"
+  },
+  {
+    "numero":264,
+    "titulo":"LA VECINA DE AL LADO",
+    "nota":"",
+    "titulo_norm":"la vecina de al lado"
+  },
+  {
+    "numero":265,
+    "titulo":"LA VENGANZA DEL CONDE DE MONTECRITO",
+    "nota":"",
+    "titulo_norm":"la venganza del conde de montecrito"
+  },
+  {
+    "numero":266,
+    "titulo":"LA VENTANA SECRETA",
+    "nota":"",
+    "titulo_norm":"la ventana secreta"
+  },
+  {
+    "numero":267,
+    "titulo":"LA VIDA ES BELLA",
+    "nota":"",
+    "titulo_norm":"la vida es bella"
+  },
+  {
+    "numero":268,
+    "titulo":"LA ZONA MUERTA",
+    "nota":"",
+    "titulo_norm":"la zona muerta"
+  },
+  {
+    "numero":269,
+    "titulo":"LABERINT",
+    "nota":"",
+    "titulo_norm":"laberint"
+  },
+  {
+    "numero":270,
+    "titulo":"LAGRIMAS DEL SOL",
+    "nota":"",
+    "titulo_norm":"lagrimas del sol"
+  },
+  {
+    "numero":223,
+    "titulo":"LAS CASA DE CERA",
+    "nota":"",
+    "titulo_norm":"las casa de cera"
+  },
+  {
+    "numero":271,
+    "titulo":"LAS CRONICAS DE NARNIA",
+    "nota":"",
+    "titulo_norm":"las cronicas de narnia"
+  },
+  {
+    "numero":272,
+    "titulo":"LAS CRONICAS DE RIDDICK",
+    "nota":"",
+    "titulo_norm":"las cronicas de riddick"
+  },
+  {
+    "numero":273,
+    "titulo":"LAS ENTRAÑAS DE LA BESTIA",
+    "nota":"",
+    "titulo_norm":"las entranas de la bestia"
+  },
+  {
+    "numero":274,
+    "titulo":"LAS MUJERES PERFECTAS",
+    "nota":"",
+    "titulo_norm":"las mujeres perfectas"
+  },
+  {
+    "numero":256,
+    "titulo":"LAS NORMAS DE LA CASA DE SIDRA",
+    "nota":"",
+    "titulo_norm":"las normas de la casa de sidra"
+  },
+  {
+    "numero":276,
+    "titulo":"LAURENCE DE ARABIA",
+    "nota":"DISCO 2",
+    "titulo_norm":"laurence de arabia"
+  },
+  {
+    "numero":275,
+    "titulo":"LAURENCE DE ARABIA",
+    "nota":"DISCO 1",
+    "titulo_norm":"laurence de arabia"
+  },
+  {
+    "numero":277,
+    "titulo":"LEJOS DEL CIELO",
+    "nota":"",
+    "titulo_norm":"lejos del cielo"
+  },
+  {
+    "numero":278,
+    "titulo":"LIMITE VERTICAL",
+    "nota":"",
+    "titulo_norm":"limite vertical"
+  },
+  {
+    "numero":279,
+    "titulo":"LOA QUE LA VERDAD ESCONDE",
+    "nota":"",
+    "titulo_norm":"loa que la verdad esconde"
+  },
+  {
+    "numero":280,
+    "titulo":"LOS 4 FANTASTICOS",
+    "nota":"",
+    "titulo_norm":"los 4 fantasticos"
+  },
+  {
+    "numero":281,
+    "titulo":"LOS CAÑONES DE NAVARONE",
+    "nota":"",
+    "titulo_norm":"los canones de navarone"
+  },
+  {
+    "numero":492,
+    "titulo":"LOS CAZAFANTASMAS",
+    "nota":"",
+    "titulo_norm":"los cazafantasmas"
+  },
+  {
+    "numero":282,
+    "titulo":"LOS CHICOS DEL CORO",
+    "nota":"",
+    "titulo_norm":"los chicos del coro"
+  },
+  {
+    "numero":283,
+    "titulo":"LOS CHICOS DEL MAIZ",
+    "nota":"",
+    "titulo_norm":"los chicos del maiz"
+  },
+  {
+    "numero":517,
+    "titulo":"LOS CRIMENES DE OXFORD",
+    "nota":"",
+    "titulo_norm":"los crimenes de oxford"
+  },
+  {
+    "numero":513,
+    "titulo":"LOS DIEZ MANDAMIENTOS",
+    "nota":"DISCO 2",
+    "titulo_norm":"los diez mandamientos"
+  },
+  {
+    "numero":512,
+    "titulo":"LOS DIEZ MANDAMIENTOS",
+    "nota":"DISCO 1",
+    "titulo_norm":"los diez mandamientos"
+  },
+  {
+    "numero":284,
+    "titulo":"LOS INMORTALES",
+    "nota":"",
+    "titulo_norm":"los inmortales"
+  },
+  {
+    "numero":285,
+    "titulo":"LOS INTOCABLES DE ELIOT NESS",
+    "nota":"",
+    "titulo_norm":"los intocables de eliot ness"
+  },
+  {
+    "numero":475,
+    "titulo":"LOS LUNES AL SOL",
+    "nota":"",
+    "titulo_norm":"los lunes al sol"
+  },
+  {
+    "numero":286,
+    "titulo":"LOS OTROS",
+    "nota":"",
+    "titulo_norm":"los otros"
+  },
+  {
+    "numero":287,
+    "titulo":"LOS OTROS",
+    "nota":"EXTRAS",
+    "titulo_norm":"los otros"
+  },
+  {
+    "numero":288,
+    "titulo":"LOS PADRES DE EL",
+    "nota":"",
+    "titulo_norm":"los padres de el"
+  },
+  {
+    "numero":289,
+    "titulo":"LOS PUENTES DE MADISON",
+    "nota":"",
+    "titulo_norm":"los puentes de madison"
+  },
+  {
+    "numero":290,
+    "titulo":"LOS RIOS DE COLOR PURPURA",
+    "nota":"DISCO 1",
+    "titulo_norm":"los rios de color purpura"
+  },
+  {
+    "numero":291,
+    "titulo":"LOS RIOS DE COLOR PURPURA",
+    "nota":"DISCO 2",
+    "titulo_norm":"los rios de color purpura"
+  },
+  {
+    "numero":292,
+    "titulo":"LOS ROMPEHUESOS",
+    "nota":"",
+    "titulo_norm":"los rompehuesos"
+  },
+  {
+    "numero":473,
+    "titulo":"LOS ULTIMOS DIAS DEL EDEN",
+    "nota":"",
+    "titulo_norm":"los ultimos dias del eden"
+  },
+  {
+    "numero":293,
+    "titulo":"LOVE STORY",
+    "nota":"",
+    "titulo_norm":"love story"
+  },
+  {
+    "numero":294,
+    "titulo":"MAD MAX",
+    "nota":"",
+    "titulo_norm":"mad max"
+  },
+  {
+    "numero":295,
+    "titulo":"MAD MAX 2",
+    "nota":"",
+    "titulo_norm":"mad max 2"
+  },
+  {
+    "numero":296,
+    "titulo":"MAD MAX 3",
+    "nota":"",
+    "titulo_norm":"mad max 3"
+  },
+  {
+    "numero":297,
+    "titulo":"MALEVOLENCE",
+    "nota":"",
+    "titulo_norm":"malevolence"
+  },
+  {
+    "numero":298,
+    "titulo":"MANUAL DEL AMOR",
+    "nota":"",
+    "titulo_norm":"manual del amor"
+  },
+  {
+    "numero":299,
+    "titulo":"MAR ADENTRO",
+    "nota":"",
+    "titulo_norm":"mar adentro"
+  },
+  {
+    "numero":300,
+    "titulo":"MARATHON MAN",
+    "nota":"",
+    "titulo_norm":"marathon man"
+  },
+  {
+    "numero":301,
+    "titulo":"MAS ALLA DE LOS SUEÑOS",
+    "nota":"",
+    "titulo_norm":"mas alla de los suenos"
+  },
+  {
+    "numero":302,
+    "titulo":"MATRIX",
+    "nota":"",
+    "titulo_norm":"matrix"
+  },
+  {
+    "numero":304,
+    "titulo":"MATRIX RELOADED",
+    "nota":"EXTRAS",
+    "titulo_norm":"matrix reloaded"
+  },
+  {
+    "numero":303,
+    "titulo":"MATRIX RELOADED",
+    "nota":"",
+    "titulo_norm":"matrix reloaded"
+  },
+  {
+    "numero":306,
+    "titulo":"MATRIX REVOLUTION",
+    "nota":"EXTRAS",
+    "titulo_norm":"matrix revolution"
+  },
+  {
+    "numero":305,
+    "titulo":"MATRIX REVOLUTION",
+    "nota":"",
+    "titulo_norm":"matrix revolution"
+  },
+  {
+    "numero":307,
+    "titulo":"MAXIMO RIESGO",
+    "nota":"",
+    "titulo_norm":"maximo riesgo"
+  },
+  {
+    "numero":308,
+    "titulo":"MEMORIAS DE AFRICA",
+    "nota":"",
+    "titulo_norm":"memorias de africa"
+  },
+  {
+    "numero":309,
+    "titulo":"MEMORIAS DE UNA GEISA",
+    "nota":"",
+    "titulo_norm":"memorias de una geisa"
+  },
+  {
+    "numero":497,
+    "titulo":"MEMORIAS DE UNA GEISA",
+    "nota":"",
+    "titulo_norm":"memorias de una geisa"
+  },
+  {
+    "numero":310,
+    "titulo":"MENTES PELIGROSAS",
+    "nota":"",
+    "titulo_norm":"mentes peligrosas"
+  },
+  {
+    "numero":312,
+    "titulo":"MILLION DOLLAR BABY",
+    "nota":"",
+    "titulo_norm":"million dollar baby"
+  },
+  {
+    "numero":314,
+    "titulo":"MINORITY REPORT",
+    "nota":"",
+    "titulo_norm":"minority report"
+  },
+  {
+    "numero":313,
+    "titulo":"MINORITY REPORT",
+    "nota":"",
+    "titulo_norm":"minority report"
+  },
+  {
+    "numero":315,
+    "titulo":"MISION IMPOSIBLE",
+    "nota":"",
+    "titulo_norm":"mision imposible"
+  },
+  {
+    "numero":316,
+    "titulo":"MISION IMPOSIBLE 2",
+    "nota":"",
+    "titulo_norm":"mision imposible 2"
+  },
+  {
+    "numero":317,
+    "titulo":"MISTERIOSA OBSESION",
+    "nota":"",
+    "titulo_norm":"misteriosa obsesion"
+  },
+  {
+    "numero":520,
+    "titulo":"MONSTRUOSO",
+    "nota":"",
+    "titulo_norm":"monstruoso"
+  },
+  {
+    "numero":318,
+    "titulo":"MORTADELO Y FILEMON",
+    "nota":"",
+    "titulo_norm":"mortadelo y filemon"
+  },
+  {
+    "numero":524,
+    "titulo":"MORTADELO Y FILEMON 2",
+    "nota":"",
+    "titulo_norm":"mortadelo y filemon 2"
+  },
+  {
+    "numero":502,
+    "titulo":"MUÑECO DIABOLICO",
+    "nota":"",
+    "titulo_norm":"muneco diabolico"
+  },
+  {
+    "numero":319,
+    "titulo":"NACIDO EL 4 DE JULIO",
+    "nota":"",
+    "titulo_norm":"nacido el 4 de julio"
+  },
+  {
+    "numero":320,
+    "titulo":"NAPOLA",
+    "nota":"",
+    "titulo_norm":"napola"
+  },
+  {
+    "numero":321,
+    "titulo":"NAUFRAGO",
+    "nota":"",
+    "titulo_norm":"naufrago"
+  },
+  {
+    "numero":493,
+    "titulo":"NEXT",
+    "nota":"",
+    "titulo_norm":"next"
+  },
+  {
+    "numero":522,
+    "titulo":"NO ES PAIS PARA VIEJO",
+    "nota":"",
+    "titulo_norm":"no es pais para viejo"
+  },
+  {
+    "numero":322,
+    "titulo":"OCEAN ELEVEN",
+    "nota":"",
+    "titulo_norm":"ocean eleven"
+  },
+  {
+    "numero":482,
+    "titulo":"OCEAN´S TWELVE",
+    "nota":"",
+    "titulo_norm":"ocean s twelve"
+  },
+  {
+    "numero":323,
+    "titulo":"OCEANOS DE FUEGO",
+    "nota":"",
+    "titulo_norm":"oceanos de fuego"
+  },
+  {
+    "numero":324,
+    "titulo":"OFICIAL Y CABALLERO",
+    "nota":"",
+    "titulo_norm":"oficial y caballero"
+  },
+  {
+    "numero":325,
+    "titulo":"OLIVER TWIST",
+    "nota":"",
+    "titulo_norm":"oliver twist"
+  },
+  {
+    "numero":326,
+    "titulo":"OTOÑO EN NUEVA YORK",
+    "nota":"",
+    "titulo_norm":"otono en nueva york"
+  },
+  {
+    "numero":327,
+    "titulo":"OUIJA",
+    "nota":"",
+    "titulo_norm":"ouija"
+  },
+  {
+    "numero":328,
+    "titulo":"PANICO EN EL TUNEL",
+    "nota":"",
+    "titulo_norm":"panico en el tunel"
+  },
+  {
+    "numero":329,
+    "titulo":"PASEANDO A MISS DEISY",
+    "nota":"",
+    "titulo_norm":"paseando a miss deisy"
+  },
+  {
+    "numero":330,
+    "titulo":"PERSEGUIDO",
+    "nota":"",
+    "titulo_norm":"perseguido"
+  },
+  {
+    "numero":465,
+    "titulo":"PERSEGUIDO",
+    "nota":"",
+    "titulo_norm":"perseguido"
+  },
+  {
+    "numero":331,
+    "titulo":"PESADILLA EN ELM STREET",
+    "nota":"",
+    "titulo_norm":"pesadilla en elm street"
+  },
+  {
+    "numero":332,
+    "titulo":"PESADILLA EN ELM STREET 2",
+    "nota":"",
+    "titulo_norm":"pesadilla en elm street 2"
+  },
+  {
+    "numero":333,
+    "titulo":"PESADILLA EN ELM STREET 3",
+    "nota":"",
+    "titulo_norm":"pesadilla en elm street 3"
+  },
+  {
+    "numero":334,
+    "titulo":"PETER PAN",
+    "nota":"",
+    "titulo_norm":"peter pan"
+  },
+  {
+    "numero":477,
+    "titulo":"PHENOMENON",
+    "nota":"",
+    "titulo_norm":"phenomenon"
+  },
+  {
+    "numero":336,
+    "titulo":"PHILADELPHIA",
+    "nota":"EXTRAS",
+    "titulo_norm":"philadelphia"
+  },
+  {
+    "numero":335,
+    "titulo":"PHILADELPHIA",
+    "nota":"",
+    "titulo_norm":"philadelphia"
+  },
+  {
+    "numero":466,
+    "titulo":"PIRATAS DEL CARIBE",
+    "nota":"",
+    "titulo_norm":"piratas del caribe"
+  },
+  {
+    "numero":467,
+    "titulo":"PIRATAS DEL CARIBE 2",
+    "nota":"",
+    "titulo_norm":"piratas del caribe 2"
+  },
+  {
+    "numero":468,
+    "titulo":"PIRATAS DEL CARIBE 3",
+    "nota":"",
+    "titulo_norm":"piratas del caribe 3"
+  },
+  {
+    "numero":337,
+    "titulo":"PITCH BLACK",
+    "nota":"",
+    "titulo_norm":"pitch black"
+  },
+  {
+    "numero":338,
+    "titulo":"PLAN DE VUELO: DESAPARECIDA",
+    "nota":"",
+    "titulo_norm":"plan de vuelo desaparecida"
+  },
+  {
+    "numero":339,
+    "titulo":"POLI DE GUARDERIA",
+    "nota":"",
+    "titulo_norm":"poli de guarderia"
+  },
+  {
+    "numero":340,
+    "titulo":"POLTERGEIST",
+    "nota":"",
+    "titulo_norm":"poltergeist"
+  },
+  {
+    "numero":341,
+    "titulo":"POR UN PUÑADO DE DOLARES",
+    "nota":"",
+    "titulo_norm":"por un punado de dolares"
+  },
+  {
+    "numero":531,
+    "titulo":"POZOS DE AMBICION",
+    "nota":"",
+    "titulo_norm":"pozos de ambicion"
+  },
+  {
+    "numero":530,
+    "titulo":"PSICOSIS",
+    "nota":"",
+    "titulo_norm":"psicosis"
+  },
+  {
+    "numero":342,
+    "titulo":"PULP FICTION",
+    "nota":"",
+    "titulo_norm":"pulp fiction"
+  },
+  {
+    "numero":343,
+    "titulo":"QUE HE HECHO YO PARA MERECER ESTO",
+    "nota":"",
+    "titulo_norm":"que he hecho yo para merecer esto"
+  },
+  {
+    "numero":344,
+    "titulo":"QUEDATE A MI LADO",
+    "nota":"",
+    "titulo_norm":"quedate a mi lado"
+  },
+  {
+    "numero":345,
+    "titulo":"QUILLS",
+    "nota":"",
+    "titulo_norm":"quills"
+  },
+  {
+    "numero":348,
+    "titulo":"RAMBO 3",
+    "nota":"",
+    "titulo_norm":"rambo 3"
+  },
+  {
+    "numero":503,
+    "titulo":"REC",
+    "nota":"",
+    "titulo_norm":"rec"
+  },
+  {
+    "numero":349,
+    "titulo":"REENCARNACION",
+    "nota":"",
+    "titulo_norm":"reencarnacion"
+  },
+  {
+    "numero":350,
+    "titulo":"REGRESO AL FUTURO",
+    "nota":"",
+    "titulo_norm":"regreso al futuro"
+  },
+  {
+    "numero":351,
+    "titulo":"REGRESO AL FUTURO 2",
+    "nota":"",
+    "titulo_norm":"regreso al futuro 2"
+  },
+  {
+    "numero":352,
+    "titulo":"REGRESO AL FUTURO 3",
+    "nota":"",
+    "titulo_norm":"regreso al futuro 3"
+  },
+  {
+    "numero":353,
+    "titulo":"REINAS",
+    "nota":"",
+    "titulo_norm":"reinas"
+  },
+  {
+    "numero":354,
+    "titulo":"ROBIN HOOD: PRINCIPE DE LOS LADRONES",
+    "nota":"",
+    "titulo_norm":"robin hood principe de los ladrones"
+  },
+  {
+    "numero":355,
+    "titulo":"ROBOCOP",
+    "nota":"",
+    "titulo_norm":"robocop"
+  },
+  {
+    "numero":356,
+    "titulo":"ROCKY BALBOA",
+    "nota":"",
+    "titulo_norm":"rocky balboa"
+  },
+  {
+    "numero":357,
+    "titulo":"ROMASANTA",
+    "nota":"",
+    "titulo_norm":"romasanta"
+  },
+  {
+    "numero":358,
+    "titulo":"ROSE RED",
+    "nota":"",
+    "titulo_norm":"rose red"
+  },
+  {
+    "numero":359,
+    "titulo":"ROSE RED 2",
+    "nota":"",
+    "titulo_norm":"rose red 2"
+  },
+  {
+    "numero":360,
+    "titulo":"S.W.A.T.",
+    "nota":"",
+    "titulo_norm":"s w a t"
+  },
+  {
+    "numero":361,
+    "titulo":"SAINT AND SOLDIERS",
+    "nota":"",
+    "titulo_norm":"saint and soldiers"
+  },
+  {
+    "numero":362,
+    "titulo":"SALVAR AL SOLDADO RYAN",
+    "nota":"",
+    "titulo_norm":"salvar al soldado ryan"
+  },
+  {
+    "numero":363,
+    "titulo":"SALVAR AL SOLDADO RYAN",
+    "nota":"EXTRAS",
+    "titulo_norm":"salvar al soldado ryan"
+  },
+  {
+    "numero":364,
+    "titulo":"SAVIOUR",
+    "nota":"",
+    "titulo_norm":"saviour"
+  },
+  {
+    "numero":365,
+    "titulo":"SAW",
+    "nota":"",
+    "titulo_norm":"saw"
+  },
+  {
+    "numero":454,
+    "titulo":"SAW 2",
+    "nota":"",
+    "titulo_norm":"saw 2"
+  },
+  {
+    "numero":455,
+    "titulo":"SAW 3",
+    "nota":"",
+    "titulo_norm":"saw 3"
+  },
+  {
+    "numero":456,
+    "titulo":"SAW 4",
+    "nota":"",
+    "titulo_norm":"saw 4"
+  },
+  {
+    "numero":500,
+    "titulo":"SE LO QUE HICISTEIS EL ULTIMO VERANO",
+    "nota":"",
+    "titulo_norm":"se lo que hicisteis el ultimo verano"
+  },
+  {
+    "numero":367,
+    "titulo":"SEÑALES",
+    "nota":"",
+    "titulo_norm":"senales"
+  },
+  {
+    "numero":366,
+    "titulo":"SENTIDO Y SENSIBILIDAD",
+    "nota":"",
+    "titulo_norm":"sentido y sensibilidad"
+  },
+  {
+    "numero":453,
+    "titulo":"SEVEN",
+    "nota":"",
+    "titulo_norm":"seven"
+  },
+  {
+    "numero":463,
+    "titulo":"SHREK TERCERO",
+    "nota":"",
+    "titulo_norm":"shrek tercero"
+  },
+  {
+    "numero":529,
+    "titulo":"SIN CITY",
+    "nota":"",
+    "titulo_norm":"sin city"
+  },
+  {
+    "numero":368,
+    "titulo":"SIN PERDON",
+    "nota":"",
+    "titulo_norm":"sin perdon"
+  },
+  {
+    "numero":369,
+    "titulo":"SLEEPERS",
+    "nota":"",
+    "titulo_norm":"sleepers"
+  },
+  {
+    "numero":370,
+    "titulo":"SOLA MIA",
+    "nota":"",
+    "titulo_norm":"sola mia"
+  },
+  {
+    "numero":371,
+    "titulo":"SOMMERSBY",
+    "nota":"",
+    "titulo_norm":"sommersby"
+  },
+  {
+    "numero":372,
+    "titulo":"SOPHIE SCHOLL",
+    "nota":"",
+    "titulo_norm":"sophie scholl"
+  },
+  {
+    "numero":506,
+    "titulo":"SOY LEYENDA",
+    "nota":"",
+    "titulo_norm":"soy leyenda"
+  },
+  {
+    "numero":373,
+    "titulo":"SPHERE",
+    "nota":"",
+    "titulo_norm":"sphere"
+  },
+  {
+    "numero":374,
+    "titulo":"SPIDERMAN",
+    "nota":"",
+    "titulo_norm":"spiderman"
+  },
+  {
+    "numero":375,
+    "titulo":"SPIDERMAN 2",
+    "nota":"",
+    "titulo_norm":"spiderman 2"
+  },
+  {
+    "numero":376,
+    "titulo":"SPIDERMAN 3",
+    "nota":"",
+    "titulo_norm":"spiderman 3"
+  },
+  {
+    "numero":377,
+    "titulo":"SR Y SRA SMITH",
+    "nota":"",
+    "titulo_norm":"sr y sra smith"
+  },
+  {
+    "numero":378,
+    "titulo":"STAR WARS: EPISODIO 1",
+    "nota":"",
+    "titulo_norm":"star wars episodio 1"
+  },
+  {
+    "numero":379,
+    "titulo":"STAR WARS: EPISODIO 2",
+    "nota":"",
+    "titulo_norm":"star wars episodio 2"
+  },
+  {
+    "numero":380,
+    "titulo":"STAR WARS: EPISODIO 3",
+    "nota":"",
+    "titulo_norm":"star wars episodio 3"
+  },
+  {
+    "numero":381,
+    "titulo":"STAR WARS: EPISODIO 4",
+    "nota":"",
+    "titulo_norm":"star wars episodio 4"
+  },
+  {
+    "numero":382,
+    "titulo":"STAR WARS: EPISODIO 5",
+    "nota":"",
+    "titulo_norm":"star wars episodio 5"
+  },
+  {
+    "numero":383,
+    "titulo":"STAR WARS: EPISODIO 6",
+    "nota":"",
+    "titulo_norm":"star wars episodio 6"
+  },
+  {
+    "numero":384,
+    "titulo":"STAR WARS -EXTRAS 1",
+    "nota":"",
+    "titulo_norm":"star wars extras 1"
+  },
+  {
+    "numero":385,
+    "titulo":"STAR WARS -EXTRAS 2",
+    "nota":"",
+    "titulo_norm":"star wars extras 2"
+  },
+  {
+    "numero":386,
+    "titulo":"STAR WARS -EXTRAS 3",
+    "nota":"",
+    "titulo_norm":"star wars extras 3"
+  },
+  {
+    "numero":387,
+    "titulo":"STAR WARS -EXTRAS 4",
+    "nota":"",
+    "titulo_norm":"star wars extras 4"
+  },
+  {
+    "numero":388,
+    "titulo":"STIGMATA",
+    "nota":"",
+    "titulo_norm":"stigmata"
+  },
+  {
+    "numero":389,
+    "titulo":"SUCEDIÓ EN MANHATTAN",
+    "nota":"",
+    "titulo_norm":"sucedio en manhattan"
+  },
+  {
+    "numero":390,
+    "titulo":"SUPERMAN",
+    "nota":"CUATRILOGIA",
+    "titulo_norm":"superman"
+  },
+  {
+    "numero":391,
+    "titulo":"SUPERMAN RETURNS",
+    "nota":"",
+    "titulo_norm":"superman returns"
+  },
+  {
+    "numero":392,
+    "titulo":"TAXI DRIVE",
+    "nota":"",
+    "titulo_norm":"taxi drive"
+  },
+  {
+    "numero":393,
+    "titulo":"TELMA Y LOUISE",
+    "nota":"",
+    "titulo_norm":"telma y louise"
+  },
+  {
+    "numero":394,
+    "titulo":"TERESA: EL CUERPO DE CRISTO",
+    "nota":"",
+    "titulo_norm":"teresa el cuerpo de cristo"
+  },
+  {
+    "numero":395,
+    "titulo":"TERMINATOR",
+    "nota":"",
+    "titulo_norm":"terminator"
+  },
+  {
+    "numero":396,
+    "titulo":"TERMINATOR",
+    "nota":"EXTRAS",
+    "titulo_norm":"terminator"
+  },
+  {
+    "numero":398,
+    "titulo":"TERMINATOR 2",
+    "nota":"EXTRAS",
+    "titulo_norm":"terminator 2"
+  },
+  {
+    "numero":399,
+    "titulo":"TERMINATOR 3",
+    "nota":"",
+    "titulo_norm":"terminator 3"
+  },
+  {
+    "numero":526,
+    "titulo":"TERMINATOR 3",
+    "nota":"EXTRAS",
+    "titulo_norm":"terminator 3"
+  },
+  {
+    "numero":397,
+    "titulo":"TERMINATOS 2",
+    "nota":"",
+    "titulo_norm":"terminatos 2"
+  },
+  {
+    "numero":400,
+    "titulo":"THE CONTRACT",
+    "nota":"",
+    "titulo_norm":"the contract"
+  },
+  {
+    "numero":401,
+    "titulo":"THE EYES 2",
+    "nota":"",
+    "titulo_norm":"the eyes 2"
+  },
+  {
+    "numero":460,
+    "titulo":"THE FIRM: LA TAPADERA",
+    "nota":"",
+    "titulo_norm":"the firm la tapadera"
+  },
+  {
+    "numero":402,
+    "titulo":"THE GAME",
+    "nota":"",
+    "titulo_norm":"the game"
+  },
+  {
+    "numero":403,
+    "titulo":"THE HOLE",
+    "nota":"",
+    "titulo_norm":"the hole"
+  },
+  {
+    "numero":478,
+    "titulo":"THE JACKET",
+    "nota":"",
+    "titulo_norm":"the jacket"
+  },
+  {
+    "numero":404,
+    "titulo":"THE LIBERTINE",
+    "nota":"",
+    "titulo_norm":"the libertine"
+  },
+  {
+    "numero":405,
+    "titulo":"THE RELIC",
+    "nota":"",
+    "titulo_norm":"the relic"
+  },
+  {
+    "numero":406,
+    "titulo":"THE RING 2",
+    "nota":"",
+    "titulo_norm":"the ring 2"
+  },
+  {
+    "numero":407,
+    "titulo":"THE SCORE",
+    "nota":"",
+    "titulo_norm":"the score"
+  },
+  {
+    "numero":408,
+    "titulo":"THEY",
+    "nota":"",
+    "titulo_norm":"they"
+  },
+  {
+    "numero":409,
+    "titulo":"THX 1138",
+    "nota":"",
+    "titulo_norm":"thx 1138"
+  },
+  {
+    "numero":410,
+    "titulo":"THX 1138",
+    "nota":"EXTRAS",
+    "titulo_norm":"thx 1138"
+  },
+  {
+    "numero":411,
+    "titulo":"TIBURON",
+    "nota":"COLECCIÓN",
+    "titulo_norm":"tiburon"
+  },
+  {
+    "numero":412,
+    "titulo":"TIEMPOS MODERNOS",
+    "nota":"",
+    "titulo_norm":"tiempos modernos"
+  },
+  {
+    "numero":413,
+    "titulo":"TIO VIVO",
+    "nota":"",
+    "titulo_norm":"tio vivo"
+  },
+  {
+    "numero":414,
+    "titulo":"TITANIC",
+    "nota":"",
+    "titulo_norm":"titanic"
+  },
+  {
+    "numero":415,
+    "titulo":"TODO SOBRE MI MADRE",
+    "nota":"",
+    "titulo_norm":"todo sobre mi madre"
+  },
+  {
+    "numero":416,
+    "titulo":"TOP GUN",
+    "nota":"",
+    "titulo_norm":"top gun"
+  },
+  {
+    "numero":417,
+    "titulo":"TORO SALVAJE",
+    "nota":"",
+    "titulo_norm":"toro salvaje"
+  },
+  {
+    "numero":418,
+    "titulo":"TORRENTE",
+    "nota":"",
+    "titulo_norm":"torrente"
+  },
+  {
+    "numero":419,
+    "titulo":"TORRENTE 2",
+    "nota":"",
+    "titulo_norm":"torrente 2"
+  },
+  {
+    "numero":420,
+    "titulo":"TORRENTE 3",
+    "nota":"",
+    "titulo_norm":"torrente 3"
+  },
+  {
+    "numero":421,
+    "titulo":"TRAFFIC",
+    "nota":"",
+    "titulo_norm":"traffic"
+  },
+  {
+    "numero":422,
+    "titulo":"TRAFICO HUMANO",
+    "nota":"",
+    "titulo_norm":"trafico humano"
+  },
+  {
+    "numero":423,
+    "titulo":"TRAS EL CORAZON VERDE",
+    "nota":"",
+    "titulo_norm":"tras el corazon verde"
+  },
+  {
+    "numero":424,
+    "titulo":"TRAS LA LINEA ENEMIGA",
+    "nota":"",
+    "titulo_norm":"tras la linea enemiga"
+  },
+  {
+    "numero":425,
+    "titulo":"TRON",
+    "nota":"",
+    "titulo_norm":"tron"
+  },
+  {
+    "numero":426,
+    "titulo":"TROYA",
+    "nota":"",
+    "titulo_norm":"troya"
+  },
+  {
+    "numero":427,
+    "titulo":"TROYA",
+    "nota":"EXTRAS",
+    "titulo_norm":"troya"
+  },
+  {
+    "numero":428,
+    "titulo":"U-571",
+    "nota":"",
+    "titulo_norm":"u 571"
+  },
+  {
+    "numero":429,
+    "titulo":"ULTIMA FORTALEZA",
+    "nota":"",
+    "titulo_norm":"ultima fortaleza"
+  },
+  {
+    "numero":430,
+    "titulo":"UN MUNDO PERFECTO",
+    "nota":"",
+    "titulo_norm":"un mundo perfecto"
+  },
+  {
+    "numero":476,
+    "titulo":"UNA CANCION DEL PASADO",
+    "nota":"",
+    "titulo_norm":"una cancion del pasado"
+  },
+  {
+    "numero":431,
+    "titulo":"UNA DE ZOMBIES",
+    "nota":"",
+    "titulo_norm":"una de zombies"
+  },
+  {
+    "numero":432,
+    "titulo":"UNA MENTE MARAVILLOSA",
+    "nota":"",
+    "titulo_norm":"una mente maravillosa"
+  },
+  {
+    "numero":433,
+    "titulo":"UNA NOCHE EN LA OPERA",
+    "nota":"",
+    "titulo_norm":"una noche en la opera"
+  },
+  {
+    "numero":434,
+    "titulo":"UNA VIDA POR DELANTE",
+    "nota":"",
+    "titulo_norm":"una vida por delante"
+  },
+  {
+    "numero":435,
+    "titulo":"VAMPIROS",
+    "nota":"",
+    "titulo_norm":"vampiros"
+  },
+  {
+    "numero":436,
+    "titulo":"VAN-HELSING",
+    "nota":"",
+    "titulo_norm":"van helsing"
+  },
+  {
+    "numero":505,
+    "titulo":"VEREDICTO",
+    "nota":"",
+    "titulo_norm":"veredicto"
+  },
+  {
+    "numero":437,
+    "titulo":"VOICE",
+    "nota":"",
+    "titulo_norm":"voice"
+  },
+  {
+    "numero":469,
+    "titulo":"VOICE",
+    "nota":"",
+    "titulo_norm":"voice"
+  },
+  {
+    "numero":485,
+    "titulo":"WEST SIDE STORY",
+    "nota":"DISCO 1",
+    "titulo_norm":"west side story"
+  },
+  {
+    "numero":486,
+    "titulo":"WEST SIDE STORY",
+    "nota":"DISCO 2",
+    "titulo_norm":"west side story"
+  },
+  {
+    "numero":438,
+    "titulo":"X-MEN",
+    "nota":"",
+    "titulo_norm":"x men"
+  },
+  {
+    "numero":439,
+    "titulo":"X-MEN 2",
+    "nota":"",
+    "titulo_norm":"x men 2"
+  },
+  {
+    "numero":440,
+    "titulo":"X-MEN 3",
+    "nota":"",
+    "titulo_norm":"x men 3"
+  },
+  {
+    "numero":441,
+    "titulo":"XXX 2",
+    "nota":"",
+    "titulo_norm":"xxx 2"
+  },
+  {
+    "numero":442,
+    "titulo":"YO, EL HALCON",
+    "nota":"",
+    "titulo_norm":"yo el halcon"
+  },
+  {
+    "numero":443,
+    "titulo":"YO, ROBOT",
+    "nota":"",
+    "titulo_norm":"yo robot"
+  },
+  {
+    "numero":470,
+    "titulo":"ZATOICHI",
+    "nota":"",
+    "titulo_norm":"zatoichi"
+  },
+  {
+    "numero":447,
+    "titulo":"ZODIAC",
+    "nota":"",
+    "titulo_norm":"zodiac"
+  },
+  {
+    "numero":444,
+    "titulo":"ZOOLANDER",
+    "nota":"",
+    "titulo_norm":"zoolander"
+  }
+]

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mi Videoteca</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🎬 Mi Videoteca</div>
+    <input id="search" class="search" type="text" placeholder="Buscar película…" autocomplete="off" />
+    <div id="count" class="count"></div>
+  </header>
+
+  <main>
+    <div id="grid" class="grid" aria-label="Listado de películas"></div>
+  </main>
+
+  <!-- Modal ficha -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modalCard">
+      <button id="closeBtn" class="closeBtn" aria-label="Cerrar">✕</button>
+      <div class="modalBody">
+        <div class="poster placeholderPoster">🎞️</div>
+        <div class="info">
+          <div id="num" class="bigNum"></div>
+          <h1 id="title" class="title"></h1>
+          <div id="note" class="note"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
