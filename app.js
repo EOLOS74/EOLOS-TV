@@ -5,7 +5,7 @@ const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
 const TMDB_OVERRIDES = {
-  // "Título EXACTO como sale en tu lista": 603,
+  "3 reyes": 6415,
   // "Otra peli": 155,
 };
 
