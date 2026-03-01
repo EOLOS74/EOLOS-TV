@@ -12,6 +12,10 @@ const TMDB_OVERRIDES = {
   "ALIEN 3": 8077,
   "ALIEN 4": 8078,
   "AMEN": 9045,
+  "APOCALIYSIS NOW": 28,
+  "ASESINOS": 9691,
+  "AZUMI": 5889,
+  
 
 };
 
