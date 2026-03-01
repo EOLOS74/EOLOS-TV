@@ -15,7 +15,9 @@ const TMDB_OVERRIDES = {
   "APOCALIYSIS NOW": 28,
   "ASESINOS": 9691,
   "AZUMI": 5889,
-  
+  "CARMEN": 763261,
+  "CONDENADO": 13536,
+
 
 };
 
