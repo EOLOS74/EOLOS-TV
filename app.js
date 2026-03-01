@@ -1,5 +1,17 @@
+
+const REVIEW_MODE = true; // ponlo en false cuando termines
+const review = { missing: new Set(), mismatched: new Set() };
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
+
+const TMDB_OVERRIDES = {
+  // "Título EXACTO como sale en tu lista": 603,
+  // "Otra peli": 155,
+};
+
+const TMDB_SKIP = new Set([
+  // "Título EXACTO a ignorar"
+]);
 
 let peliculas = [];
 let filtered = [];
@@ -60,6 +72,13 @@ function render() {
       if (firstCard) firstCard.focus();
     }
   }, 50);
+  if (REVIEW_MODE) {
+    setTimeout(() => {
+      if (review.missing.size) {
+        console.log("SIN CARÁTULA / SIN MATCH:", Array.from(review.missing).sort());
+      }
+    }, 1500);
+  }
 }
 
 function setupEvents() {
@@ -202,24 +221,56 @@ async function openModal(p, index) {
   $("#closeBtn").focus();
 
   try {
+
+    // --- SKIP manual ---
+    if (typeof TMDB_SKIP !== "undefined" && TMDB_SKIP.has(p.titulo)) {
+      if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
+        review.missing.add(p.titulo);
+      }
+      return;
+    }
+
+    // --- Buscar en TMDB (con override si existe) ---
     const match = await searchTmdb(p.titulo);
-    if (!match?.id) return;
+
+    if (!match?.id) {
+      if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
+        review.missing.add(p.titulo);
+      }
+      return;
+    }
 
     const details = await getTmdbDetails(match.id);
-    if (!details) return;
 
-    // Poster grande en modal
+    if (!details) {
+      if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
+        review.missing.add(p.titulo);
+      }
+      return;
+    }
+
+    // --- Poster grande ---
     if (details.poster_path) {
       posterEl.textContent = "";
       posterEl.style.backgroundImage = `url(${IMG_BASE_MODAL}${details.poster_path})`;
       posterEl.style.backgroundSize = "cover";
       posterEl.style.backgroundPosition = "center";
+    } else {
+      if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
+        review.missing.add(p.titulo);
+      }
     }
 
-    // Texto extra
-    const year = details.release_date ? details.release_date.slice(0,4) : "";
+    // --- Datos extra ---
+    const year = details.release_date
+      ? details.release_date.slice(0, 4)
+      : "";
+
     const sinopsis = details.overview || "";
-    const cast = details.credits?.cast?.slice(0, 8).map(c => c.name).join(", ") || "";
+
+    const cast = details.credits?.cast
+      ? details.credits.cast.slice(0, 8).map(c => c.name).join(", ")
+      : "";
 
     const extra = [
       year ? `Año: ${year}` : "",
@@ -227,10 +278,15 @@ async function openModal(p, index) {
       cast ? `\n\nReparto: ${cast}` : ""
     ].filter(Boolean).join("");
 
-    $("#note").textContent = (p.nota ? p.nota + "\n" : "") + extra;
+    $("#note").textContent =
+      (p.nota ? p.nota + "\n" : "") + extra;
 
   } catch (err) {
-    console.log("TMDB error:", err);
+    console.error("TMDB error:", err);
+
+    if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
+      review.missing.add(p.titulo);
+    }
   }
 }
 
@@ -259,6 +315,15 @@ function escapeHtml(s) {
   );
 }
 async function searchTmdb(title) {
+
+  // 0) Skip manual
+  if (TMDB_SKIP.has(title)) return null;
+
+  // 1) Override manual por ID
+  if (TMDB_OVERRIDES[title]) {
+    return { id: TMDB_OVERRIDES[title] };
+  }
+
   const key = normalize(title);
   if (SEARCH_CACHE.has(key)) return SEARCH_CACHE.get(key);
 
@@ -286,7 +351,12 @@ async function loadPosterForCard(p, cardEl) {
   if (!posterDiv) return;
 
   const match = await searchTmdb(p.titulo);
-  if (!match?.poster_path) return;
+
+  // Si no hay match o no hay poster
+  if (!match?.poster_path) {
+    if (REVIEW_MODE) review.missing.add(p.titulo);
+    return;
+  }
 
   posterDiv.textContent = "";
   posterDiv.style.backgroundImage = `url(${IMG_BASE_CARD}${match.poster_path})`;
