@@ -5,12 +5,12 @@ const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
 const TMDB_OVERRIDES = {
-  "A TODO GAS": 9799,
+  "A TODO GAS": 9799
   
 };
 
 const TMDB_SKIP = new Set([
-  "A TODO GAS"
+  //"A TODO GAS"
 ]);
 
 let peliculas = [];
