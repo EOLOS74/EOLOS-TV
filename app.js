@@ -5,12 +5,12 @@ const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
 const TMDB_OVERRIDES = {
-  "3 reyes": 6415,
-  // "Otra peli": 155,
+  "A TODO GAS": 9799,
+  
 };
 
 const TMDB_SKIP = new Set([
-  // "Título EXACTO a ignorar"
+  "A TODO GAS"
 ]);
 
 let peliculas = [];
