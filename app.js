@@ -7,6 +7,12 @@ const $$ = (sel) => document.querySelectorAll(sel);
 const TMDB_OVERRIDES = {
   "A TODO GAS": 9799,
   "ACORRALADO": 1368,
+  "AGARRALO COMO PUEDAS": 37136,
+  "ALIEN 2": 679,
+  "ALIEN 3": 8077,
+  "ALIEN 4": 8078,
+  "AMEN": 9045,
+
 };
 
 const TMDB_SKIP = new Set([
