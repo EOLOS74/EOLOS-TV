@@ -5,8 +5,7 @@ const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
 const TMDB_OVERRIDES = {
-  "A TODO GAS": 9799
-  
+  "A TODO GAS": 9799,  
 };
 
 const TMDB_SKIP = new Set([
@@ -314,23 +313,26 @@ function escapeHtml(s) {
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[c])
   );
 }
+
 async function searchTmdb(title) {
-
   // 0) Skip manual
-  if (TMDB_SKIP.has(title)) return null;
+  if (typeof TMDB_SKIP !== "undefined" && TMDB_SKIP.has(title)) return null;
 
-  // 1) Override manual por ID
-  if (TMDB_OVERRIDES[title]) {
-    return { id: TMDB_OVERRIDES[title] };
+  // 1) Override manual por ID -> devolvemos id + poster_path (desde detalles)
+  if (typeof TMDB_OVERRIDES !== "undefined" && TMDB_OVERRIDES[title]) {
+    const id = TMDB_OVERRIDES[title];
+    const details = await getTmdbDetails(id);
+    if (!details) return { id };
+    return { id, poster_path: details.poster_path || null };
   }
 
+  // 2) Cache normal por búsqueda
   const key = normalize(title);
   if (SEARCH_CACHE.has(key)) return SEARCH_CACHE.get(key);
 
   const res = await fetch(`${TMDB_PROXY_BASE}/search?query=${encodeURIComponent(title)}`);
   const data = await res.json();
 
-  // Cogemos el primer resultado (luego afinamos si hace falta)
   const first = data?.results?.[0] || null;
   SEARCH_CACHE.set(key, first);
   return first;
@@ -352,7 +354,6 @@ async function loadPosterForCard(p, cardEl) {
 
   const match = await searchTmdb(p.titulo);
 
-  // Si no hay match o no hay poster
   if (!match?.poster_path) {
     if (REVIEW_MODE) review.missing.add(p.titulo);
     return;
