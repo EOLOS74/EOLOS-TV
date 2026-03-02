@@ -1783,15 +1783,15 @@
   },
   {
     "numero":241,
-    "titulo":"LA LISTA DE SHIRDLER",
+    "titulo":"LA LISTA DE SCHINDLER",
     "nota":"DISCO 1",
-    "titulo_norm":"la lista de shirdler"
+    "titulo_norm":"la lista de schindler"
   },
   {
     "numero":242,
-    "titulo":"LA LISTA DE SHIRDLER",
+    "titulo":"LA LISTA DE SCHINDLER",
     "nota":"DISCO 2",
-    "titulo_norm":"la lista de shirdler"
+    "titulo_norm":"la lista de schindler"
   },
   {
     "numero":243,
@@ -1963,9 +1963,9 @@
   },
   {
     "numero":269,
-    "titulo":"LABERINT",
+    "titulo":"DENTRO DEL LABERINTO",
     "nota":"",
-    "titulo_norm":"laberint"
+    "titulo_norm":"dentro del laberinto"
   },
   {
     "numero":270,
@@ -2011,15 +2011,15 @@
   },
   {
     "numero":276,
-    "titulo":"LAURENCE DE ARABIA",
+    "titulo":"LAWRENCE DE ARABIA",
     "nota":"DISCO 2",
-    "titulo_norm":"laurence de arabia"
+    "titulo_norm":"lawrence de arabia"
   },
   {
     "numero":275,
-    "titulo":"LAURENCE DE ARABIA",
+    "titulo":"LAWRENCE DE ARABIA",
     "nota":"DISCO 1",
-    "titulo_norm":"laurence de arabia"
+    "titulo_norm":"lawrence de arabia"
   },
   {
     "numero":277,
@@ -2035,9 +2035,9 @@
   },
   {
     "numero":279,
-    "titulo":"LOA QUE LA VERDAD ESCONDE",
+    "titulo":"LO QUE LA VERDAD ESCONDE",
     "nota":"",
-    "titulo_norm":"loa que la verdad esconde"
+    "titulo_norm":"lo que la verdad esconde"
   },
   {
     "numero":280,
@@ -2407,9 +2407,9 @@
   },
   {
     "numero":329,
-    "titulo":"PASEANDO A MISS DEISY",
+    "titulo":"PASEANDO A MISS DAISY",
     "nota":"",
-    "titulo_norm":"paseando a miss deisy"
+    "titulo_norm":"paseando a miss daisy"
   },
   {
     "numero":330,
@@ -2617,15 +2617,15 @@
   },
   {
     "numero":358,
-    "titulo":"ROSE RED",
+    "titulo":"ROSE RED - DISCO 1",
     "nota":"",
     "titulo_norm":"rose red"
   },
   {
     "numero":359,
-    "titulo":"ROSE RED 2",
+    "titulo":"ROSE RED - DISCO2",
     "nota":"",
-    "titulo_norm":"rose red 2"
+    "titulo_norm":"rose red"
   },
   {
     "numero":360,
@@ -2731,9 +2731,9 @@
   },
   {
     "numero":370,
-    "titulo":"SOLA MIA",
+    "titulo":"SOLO MIA",
     "nota":"",
-    "titulo_norm":"sola mia"
+    "titulo_norm":"solo mia"
   },
   {
     "numero":371,
@@ -2897,6 +2897,12 @@
     "nota":"EXTRAS",
     "titulo_norm":"terminator"
   },
+    {
+    "numero":397,
+    "titulo":"TERMINATOR 2",
+    "nota":"",
+    "titulo_norm":"terminator 2"
+  },
   {
     "numero":398,
     "titulo":"TERMINATOR 2",
@@ -2914,12 +2920,6 @@
     "titulo":"TERMINATOR 3",
     "nota":"EXTRAS",
     "titulo_norm":"terminator 3"
-  },
-  {
-    "numero":397,
-    "titulo":"TERMINATOS 2",
-    "nota":"",
-    "titulo_norm":"terminatos 2"
   },
   {
     "numero":400,
