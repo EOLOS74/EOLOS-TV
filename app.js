@@ -56,12 +56,12 @@ const TMDB_OVERRIDES = {
   "GIGOLO": 10402,
   "HARRY POTTER 2": 672,
   "HARRY POTTER 1": 671,
-  "HERMANOS DE SANGRE 1": 4613,
-  "HERMANOS DE SANGRE 2": 4613,
-  "HERMANOS DE SANGRE 3": 4613,
-  "HERMANOS DE SANGRE 4": 4613,
-  "HERMANOS DE SANGRE 5": 4613,
-  "HERMANOS DE SANGRE 6": 4613,
+  "HERMANOS DE SANGRE 1": { type: "tv", id: 4613 },
+  "HERMANOS DE SANGRE 2": { type: "tv", id: 4613 },
+  "HERMANOS DE SANGRE 3": { type: "tv", id: 4613 },
+  "HERMANOS DE SANGRE 4": { type: "tv", id: 4613 },
+  "HERMANOS DE SANGRE 5": { type: "tv", id: 4613 },
+  "HERMANOS DE SANGRE 6": { type: "tv", id: 4613 },
   "HITLER, EL REINADO DEL MAL": 46976,
   "INFIEL": 2251,
   "JESUS DE NAZARET": 19649,
@@ -331,7 +331,7 @@ async function openModal(p, index) {
       return;
     }
 
-    const details = await getTmdbDetails(match.id);
+    const details = await getTmdbDetails({ type: match.type || "movie", id: match.id });
 
     if (!details) {
       if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
@@ -410,12 +410,21 @@ async function searchTmdb(title) {
   // 0) Skip manual
   if (typeof TMDB_SKIP !== "undefined" && TMDB_SKIP.has(title)) return null;
 
-  // 1) Override manual por ID -> devolvemos id + poster_path (desde detalles)
-  if (typeof TMDB_OVERRIDES !== "undefined" && TMDB_OVERRIDES[title]) {
-    const id = TMDB_OVERRIDES[title];
-    const details = await getTmdbDetails(id);
-    if (!details) return { id };
-    return { id, poster_path: details.poster_path || null };
+  // 1) Override manual (movie o tv)
+  if (TMDB_OVERRIDES && TMDB_OVERRIDES[title]) {
+    const ov = TMDB_OVERRIDES[title];
+
+    // Si es número -> movie
+    if (typeof ov === "number") {
+      const details = await getTmdbDetails({ type: "movie", id: ov });
+      return { id: ov, type: "movie", poster_path: details?.poster_path || null };
+    }
+
+    // Si es objeto -> respeta type
+    const type = ov.type || "movie";
+    const id = ov.id;
+    const details = await getTmdbDetails({ type, id });
+    return { id, type, poster_path: details?.poster_path || null };
   }
 
   // 2) Cache normal por búsqueda
@@ -430,13 +439,18 @@ async function searchTmdb(title) {
   return first;
 }
 
-async function getTmdbDetails(id) {
-  if (DETAILS_CACHE.has(id)) return DETAILS_CACHE.get(id);
+async function getTmdbDetails(ref) {
+  const type = ref?.type || "movie";
+  const id = ref?.id ?? ref;
 
-  const res = await fetch(`${TMDB_PROXY_BASE}/movie?id=${encodeURIComponent(id)}`);
+  const cacheKey = `${type}:${id}`;
+  if (DETAILS_CACHE.has(cacheKey)) return DETAILS_CACHE.get(cacheKey);
+
+  const endpoint = type === "tv" ? "tv" : "movie";
+  const res = await fetch(`${TMDB_PROXY_BASE}/${endpoint}?id=${encodeURIComponent(id)}`);
   const data = await res.json();
 
-  DETAILS_CACHE.set(id, data);
+  DETAILS_CACHE.set(cacheKey, data);
   return data;
 }
 
