@@ -168,44 +168,60 @@ async function load() {
 }
 
 function render() {
-  const grid = $("#grid");
-  grid.innerHTML = "";
+
+  const rows = document.getElementById("rows");
+  rows.innerHTML = "";
 
   $("#count").textContent = `${filtered.length} / ${peliculas.length}`;
 
-  filtered.forEach((p, index) => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.tabIndex = 0;
-    card.dataset.index = String(index);
+  const chunkSize = 60;
 
-    card.innerHTML = `
-      <div class="poster" data-poster="1">🎞️</div>
-      <div class="cardTitle">${escapeHtml(p.titulo)}</div>
-      <div class="cardMeta">Nº ${p.numero}${p.nota ? " • " + escapeHtml(p.nota) : ""}</div>
-    `;
+  for (let i = 0; i < filtered.length; i += chunkSize) {
 
-    // En TV con cursor, esto abre siempre (porque es click del puntero)
-    card.addEventListener("click", () => openModal(p, index));
+    const chunk = filtered.slice(i, i + chunkSize);
 
-    grid.appendChild(card);
+    const row = document.createElement("section");
+    row.className = "row";
 
-    loadPosterForCard(p, card).catch(() => {});
-  });
+    const header = document.createElement("div");
+    header.className = "rowHeader";
 
-  // foco inicial (en TV puede no importar)
-  setTimeout(() => {
-    const first = document.querySelector(".card");
-    if (first) first.focus();
-  }, 150);
+    const title = document.createElement("h2");
+    title.className = "rowTitle";
+    title.textContent = i === 0 ? "Seguir explorando" : `Colección ${i/chunkSize + 1}`;
 
-  if (REVIEW_MODE) {
-    setTimeout(() => {
-      if (review.missing.size) {
-        console.log("SIN CARÁTULA / SIN MATCH:", Array.from(review.missing).sort());
-      }
-    }, 1500);
+    header.appendChild(title);
+
+    const carousel = document.createElement("div");
+    carousel.className = "rowCarousel";
+
+    chunk.forEach((p, index) => {
+
+      const realIndex = i + index;
+
+      const card = document.createElement("div");
+      card.className = "card";
+      card.dataset.index = realIndex;
+
+      card.innerHTML = `
+        <div class="poster" data-poster="1">🎞️</div>
+        <div class="cardTitle">${escapeHtml(p.titulo)}</div>
+        <div class="cardMeta">Nº ${p.numero}${p.nota ? " • " + escapeHtml(p.nota) : ""}</div>
+      `;
+
+      card.addEventListener("click", () => openModal(p, realIndex));
+
+      carousel.appendChild(card);
+
+      loadPosterForCard(p, card).catch(()=>{});
+    });
+
+    row.appendChild(header);
+    row.appendChild(carousel);
+
+    rows.appendChild(row);
   }
+
 }
 
 function setupEvents() {
