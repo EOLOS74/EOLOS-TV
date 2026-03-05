@@ -165,63 +165,100 @@ async function load() {
   filtered = peliculas;
   render();
   setupEvents();
+  
 }
 
-function render() {
 
+const GENRE_CACHE_KEY = "tmdb_genres_cache_v1";
+
+// { "Acción": [pelis...], "Terror":[...], ... }
+let genreRows = null;
+
+function loadGenreCache() {
+  try {
+    const raw = localStorage.getItem(GENRE_CACHE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveGenreCache(obj) {
+  try {
+    localStorage.setItem(GENRE_CACHE_KEY, JSON.stringify(obj));
+  } catch {}
+}
+
+async function buildGenresIfNeeded() {
+  // si ya están construidos, no repetir
+  if (genreRows) return genreRows;
+
+  // cache local
+  const cached = loadGenreCache();
+  if (cached) {
+    genreRows = cached;
+    return genreRows;
+  }
+
+  // Construcción “progresiva” (solo una vez)
+  const map = {}; // genreName -> array de titulos (para reconstruir luego)
+  for (const p of peliculas) {
+    // usamos tu lógica: override -> id correcto -> details
+    const match = await searchTmdb(p.titulo);
+    if (!match?.id) continue;
+
+    const details = await getTmdbDetails({ type: match.type || "movie", id: match.id });
+    if (!details?.genres?.length) continue;
+
+    for (const g of details.genres) {
+      const name = g.name;
+      if (!map[name]) map[name] = [];
+      map[name].push(p.titulo); // guardamos por título para que sea estable
+    }
+  }
+
+  // Guardamos cache mínima por títulos
+  saveGenreCache(map);
+  genreRows = map;
+  return genreRows;
+}
+
+async function render() {
   const rows = document.getElementById("rows");
   rows.innerHTML = "";
 
   $("#count").textContent = `${filtered.length} / ${peliculas.length}`;
 
-  const chunkSize = 60;
+  // 1) Primera fila: Seguir explorando (tu lista filtrada actual)
+  rows.appendChild(makeRow("Seguir explorando", filtered));
 
-  for (let i = 0; i < filtered.length; i += chunkSize) {
+  // 2) Filas por género (solo si no hay búsqueda activa)
+  const searchValue = $("#search").value.trim();
+  if (searchValue) return; // si estás buscando, no metemos géneros
 
-    const chunk = filtered.slice(i, i + chunkSize);
+  const genreMap = await buildGenresIfNeeded();
 
-    const row = document.createElement("section");
-    row.className = "row";
+  // Orden Netflix-ish: primero géneros principales si existen
+  const preferred = ["Acción", "Terror", "Ciencia ficción", "Drama", "Comedia", "Thriller", "Aventura", "Fantasía", "Crimen", "Guerra", "Familia"];
+  const allGenres = Object.keys(genreMap);
 
-    const header = document.createElement("div");
-    header.className = "rowHeader";
+  const ordered = [
+    ...preferred.filter(g => allGenres.includes(g)),
+    ...allGenres.filter(g => !preferred.includes(g)).sort((a,b)=>a.localeCompare(b,"es"))
+  ];
 
-    const title = document.createElement("h2");
-    title.className = "rowTitle";
-    title.textContent = i === 0 ? "Seguir explorando" : `Colección ${i/chunkSize + 1}`;
+  // Cada género -> lista de películas en ese género (solo las que estén en tu catálogo)
+  const byTitle = new Map(peliculas.map(p => [p.titulo, p]));
 
-    header.appendChild(title);
+  for (const g of ordered) {
+    const titles = genreMap[g] || [];
+    const list = titles.map(t => byTitle.get(t)).filter(Boolean);
 
-    const carousel = document.createElement("div");
-    carousel.className = "rowCarousel";
+    // evita filas pequeñas
+    if (list.length < 8) continue;
 
-    chunk.forEach((p, index) => {
-
-      const realIndex = i + index;
-
-      const card = document.createElement("div");
-      card.className = "card";
-      card.dataset.index = realIndex;
-
-      card.innerHTML = `
-        <div class="poster" data-poster="1">🎞️</div>
-        <div class="cardTitle">${escapeHtml(p.titulo)}</div>
-        <div class="cardMeta">Nº ${p.numero}${p.nota ? " • " + escapeHtml(p.nota) : ""}</div>
-      `;
-
-      card.addEventListener("click", () => openModal(p, realIndex));
-
-      carousel.appendChild(card);
-
-      loadPosterForCard(p, card).catch(()=>{});
-    });
-
-    row.appendChild(header);
-    row.appendChild(carousel);
-
-    rows.appendChild(row);
+    rows.appendChild(makeRow(g, list));
   }
-
 }
 
 function setupEvents() {
@@ -542,6 +579,43 @@ async function loadPosterForCard(p, cardEl) {
   posterDiv.style.backgroundImage = `url(${IMG_BASE_CARD}${match.poster_path})`;
   posterDiv.style.backgroundSize = "cover";
   posterDiv.style.backgroundPosition = "center";
+}
+
+function makeRow(titleText, list) {
+  const row = document.createElement("section");
+  row.className = "row";
+
+  const header = document.createElement("div");
+  header.className = "rowHeader";
+
+  const title = document.createElement("h2");
+  title.className = "rowTitle";
+  title.textContent = titleText;
+
+  header.appendChild(title);
+
+  const carousel = document.createElement("div");
+  carousel.className = "rowCarousel";
+
+  list.forEach((p, idx) => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+      <div class="poster" data-poster="1">🎞️</div>
+      <div class="cardTitle">${escapeHtml(p.titulo)}</div>
+      <div class="cardMeta">Nº ${p.numero}${p.nota ? " • " + escapeHtml(p.nota) : ""}</div>
+    `;
+
+    card.addEventListener("click", () => openModal(p, idx));
+
+    carousel.appendChild(card);
+    loadPosterForCard(p, card).catch(()=>{});
+  });
+
+  row.appendChild(header);
+  row.appendChild(carousel);
+  return row;
 }
 
 /* =========================
