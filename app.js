@@ -161,10 +161,7 @@ function render() {
 `;
 
     card.addEventListener("click", () => openModal(p, index));
-    card.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") openModal(p, index);
-    });
-
+    
     grid.appendChild(card);
     // cargar poster en segundo plano (no bloquea la UI)
     loadPosterForCard(p, card).catch(() => {});
@@ -196,86 +193,117 @@ function render() {
   }, 300);
 }
 
-function setupEvents() {
-  // BUSCADOR
-  $("#search").addEventListener("input", (e) => {
-    const q = normalize(e.target.value);
-    if (!q) {
-      filtered = peliculas;
-    } else {
-      filtered = peliculas.filter(
-        (p) =>
-          normalize(p.titulo).includes(q) || normalize(p.nota || "").includes(q)
-      );
+function getDirFromKeyEvent(e) {
+  const key = e.key || "";
+  const code = e.code || "";
+  const kc = e.keyCode;
+
+  // Android/Google TV suele mandar DPAD_*
+  if (key === "DPAD_UP" || code === "DPAD_UP") return "up";
+  if (key === "DPAD_DOWN" || code === "DPAD_DOWN") return "down";
+  if (key === "DPAD_LEFT" || code === "DPAD_LEFT") return "left";
+  if (key === "DPAD_RIGHT" || code === "DPAD_RIGHT") return "right";
+
+  // Navegadores normales
+  if (key === "ArrowUp" || key === "Up" || code === "ArrowUp" || kc === 38) return "up";
+  if (key === "ArrowDown" || key === "Down" || code === "ArrowDown" || kc === 40) return "down";
+  if (key === "ArrowLeft" || key === "Left" || code === "ArrowLeft" || kc === 37) return "left";
+  if (key === "ArrowRight" || key === "Right" || code === "ArrowRight" || kc === 39) return "right";
+
+  return null;
+}
+
+function isOkKey(e) {
+  const key = e.key || "";
+  const code = e.code || "";
+  const kc = e.keyCode;
+
+  // OK/Center en TV
+  if (key === "DPAD_CENTER" || code === "DPAD_CENTER") return true;
+
+  // Enter normal
+  return key === "Enter" || code === "Enter" || kc === 13;
+}
+
+function isBackKey(e) {
+  const key = e.key || "";
+  const code = e.code || "";
+  const kc = e.keyCode;
+
+  // Android TV Back suele ser keyCode 4
+  return key === "Backspace" || key === "Escape" || key === "BrowserBack" || code === "BrowserBack" || kc === 4;
+}
+
+document.addEventListener("keydown", (e) => {
+  // Debug en pantalla (como ya haces)
+  const el = document.getElementById("debugKeys");
+  if (el) el.textContent = `key=${e.key} code=${e.code} keyCode=${e.keyCode}`;
+
+  const modalOpen = !$("#modal").classList.contains("hidden");
+
+  // --- Modal: Back/Escape cierra ---
+  if (modalOpen) {
+    if (isBackKey(e)) {
+      e.preventDefault();
+      e.stopPropagation();
+      closeModal();
     }
-    render();
-  });
+    return;
+  }
 
-  // Cerrar modal
-  $("#closeBtn").addEventListener("click", closeModal);
-  $("#modal").addEventListener("click", (e) => {
-    if (e.target.id === "modal") closeModal();
-  });
+  // Detectar dirección / OK
+  const dir = getDirFromKeyEvent(e);
+  const ok = isOkKey(e);
 
-  // NAVEGACIÓN CON FLECHAS (por geometría)
-  document.addEventListener("keydown", (e) => {
-    const modalOpen = !$("#modal").classList.contains("hidden");
+  // Si es tecla de mando que nos interesa, la “capturamos” para que no la robe el navegador/TV
+  if (dir || ok || isBackKey(e)) {
+    e.preventDefault();
+    e.stopPropagation();
+  } else {
+    return; // no es una tecla de navegación
+  }
 
-    // Si el modal está abierto: Escape/Backspace cierra
-    if (modalOpen) {
-      if (e.key === "Escape" || e.key === "Backspace") {
-        e.preventDefault();
-        closeModal();
-      }
-      return;
-    }
-
-    // Si estás en el buscador y pulsas abajo: saltar a la primera card
-    if (document.activeElement === $("#search") && e.key === "ArrowDown") {
+  // --- Si estás en buscador y pulsas abajo: saltar a la primera card ---
+  if (document.activeElement === $("#search")) {
+    if (dir === "down") {
       const first = $$(".card")[0];
       if (first) {
-        e.preventDefault();
         first.focus();
         first.scrollIntoView({ behavior: "smooth", block: "center" });
       }
       return;
     }
-
-    const active = document.activeElement;
-    if (!active || !active.classList.contains("card")) return;
-
-    const cards = Array.from($$(".card"));
-    const fromIndex = parseInt(active.dataset.index, 10);
-    const fromEl = active;
-
-    if (Number.isNaN(fromIndex)) return;
-
-    if (e.key === "Enter") {
-      e.preventDefault();
-      openModal(filtered[fromIndex], fromIndex);
+    // opcional: si pulsas OK en buscador, baja también
+    if (ok) {
+      const first = $$(".card")[0];
+      if (first) {
+        first.focus();
+        first.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
       return;
     }
+  }
 
-   const key = e.key || e.code;
+  const active = document.activeElement;
+  if (!active || !active.classList.contains("card")) return;
 
-   const dir =
-    key === "ArrowLeft" || key === "Left" || e.keyCode === 37 ? "left" :
-    key === "ArrowRight" || key === "Right" || e.keyCode === 39 ? "right" :
-    key === "ArrowUp" || key === "Up" || e.keyCode === 38 ? "up" :
-    key === "ArrowDown" || key === "Down" || e.keyCode === 40 ? "down" :
-    null;
+  const cards = Array.from($$(".card"));
+  const fromIndex = parseInt(active.dataset.index, 10);
+  if (Number.isNaN(fromIndex)) return;
 
-    if (!dir) return;
+  if (ok) {
+    openModal(filtered[fromIndex], fromIndex);
+    return;
+  }
 
-    e.preventDefault();
+  if (!dir) return;
 
-    const next = findNextByGeometry(fromEl, cards, dir);
-    if (next) {
-      next.focus();
-      next.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
-    }
-  });
-}
+  const next = findNextByGeometry(active, cards, dir);
+  if (next) {
+    next.focus();
+    next.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+  }
+}, true);
 
 // Busca la tarjeta “más natural” en la dirección pedida usando posiciones reales
 function findNextByGeometry(fromEl, allEls, dir) {
