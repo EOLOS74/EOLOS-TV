@@ -235,9 +235,6 @@ function isBackKey(e) {
 }
 
 document.addEventListener("keydown", (e) => {
-  // Debug en pantalla (como ya haces)
-  const el = document.getElementById("debugKeys");
-  if (el) el.textContent = `key=${e.key} code=${e.code} keyCode=${e.keyCode}`;
 
   const modalOpen = !$("#modal").classList.contains("hidden");
 
