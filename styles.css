@@ -157,3 +157,47 @@ main{padding:16px}
 html, body {
   cursor: none;
 }
+
+.row{
+  padding: 8px 16px 18px;
+}
+
+.rowHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin: 4px 0 10px;
+}
+
+.rowTitle{
+  margin:0;
+  font-size: 18px;
+  font-weight: 750;
+}
+
+/* Carrusel horizontal */
+.rowCarousel{
+  display:flex;
+  gap:14px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Oculta scrollbar (no siempre en TV, pero ayuda) */
+.rowCarousel::-webkit-scrollbar{ height: 8px; }
+.rowCarousel::-webkit-scrollbar-thumb{ background: rgba(255,255,255,.18); border-radius: 99px; }
+.rowCarousel::-webkit-scrollbar-track{ background: rgba(255,255,255,.06); border-radius: 99px; }
+
+/* Las tarjetas en carrusel: ancho fijo */
+.rowCarousel .card{
+  flex: 0 0 170px;
+  scroll-snap-align: start;
+}
+
+/* Poster un pelín más “Netflix” en fila */
+.rowCarousel .poster{
+  height: 240px;
+}
