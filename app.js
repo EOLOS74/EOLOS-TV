@@ -1,6 +1,10 @@
+/* =========================
+   Helpers / Config
+========================= */
 
 const REVIEW_MODE = true; // ponlo en false cuando termines
 const review = { missing: new Set(), mismatched: new Set() };
+
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
@@ -112,7 +116,7 @@ const TMDB_OVERRIDES = {
   "X-MEN 3": 36668,
   "XXX 2": 47971,
   "ZATOICHI": 246,
-  };
+};
 
 const TMDB_SKIP = new Set([
   //"A TODO GAS"
@@ -121,13 +125,34 @@ const TMDB_SKIP = new Set([
 let peliculas = [];
 let filtered = [];
 let lastFocusedIndex = 0;
+
 const TMDB_PROXY_BASE = "https://empty-paper-474c.eligioalmuedo.workers.dev";
 const IMG_BASE_CARD = "https://image.tmdb.org/t/p/w342";
 const IMG_BASE_MODAL = "https://image.tmdb.org/t/p/w500";
 
-// cache para no buscar lo mismo mil veces
-const SEARCH_CACHE = new Map();   // titulo_norm -> result (id, poster_path, ...)
-const DETAILS_CACHE = new Map();  // tmdbId -> full details
+// caches
+const SEARCH_CACHE = new Map();   // titulo_norm -> search result
+const DETAILS_CACHE = new Map();  // type:id -> details
+
+function normalize(s) {
+  return (s || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9 ]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function escapeHtml(s) {
+  return (s ?? "").replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[c])
+  );
+}
+
+/* =========================
+   App
+========================= */
 
 async function load() {
   const res = await fetch("peliculas.json");
@@ -155,25 +180,25 @@ function render() {
     card.dataset.index = String(index);
 
     card.innerHTML = `
-  <div class="poster" data-poster="1">🎞️</div>
-  <div class="cardTitle">${escapeHtml(p.titulo)}</div>
-  <div class="cardMeta">Nº ${p.numero}${p.nota ? " • " + escapeHtml(p.nota) : ""}</div>
-`;
+      <div class="poster" data-poster="1">🎞️</div>
+      <div class="cardTitle">${escapeHtml(p.titulo)}</div>
+      <div class="cardMeta">Nº ${p.numero}${p.nota ? " • " + escapeHtml(p.nota) : ""}</div>
+    `;
 
+    // En TV con cursor, esto abre siempre (porque es click del puntero)
     card.addEventListener("click", () => openModal(p, index));
-    
+
     grid.appendChild(card);
-    // cargar poster en segundo plano (no bloquea la UI)
+
     loadPosterForCard(p, card).catch(() => {});
   });
 
-  // Si al renderizar no hay foco (o se perdió), fócalo al primero
+  // foco inicial (en TV puede no importar)
   setTimeout(() => {
-    if (!document.activeElement || document.activeElement === document.body) {
-      const firstCard = $$(".card")[0];
-      if (firstCard) firstCard.focus();
-    }
-  }, 50);
+    const first = document.querySelector(".card");
+    if (first) first.focus();
+  }, 150);
+
   if (REVIEW_MODE) {
     setTimeout(() => {
       if (review.missing.size) {
@@ -181,128 +206,147 @@ function render() {
       }
     }, 1500);
   }
-  setTimeout(() => {
-  const firstCard = document.querySelector(".card");
-  if (firstCard) {
-    firstCard.focus();
-    firstCard.scrollIntoView({
-      behavior: "instant",
-      block: "center"
+}
+
+function setupEvents() {
+  // BUSCADOR
+  $("#search").addEventListener("input", (e) => {
+    const q = normalize(e.target.value);
+    filtered = !q
+      ? peliculas
+      : peliculas.filter(p => normalize(p.titulo).includes(q) || normalize(p.nota || "").includes(q));
+    render();
+  });
+
+  // ===== CIERRE MODAL: click/puntero/touch + zona caliente =====
+  const closeBtn = $("#closeBtn");
+  const modal = $("#modal");
+  const modalCard = document.querySelector(".modalCard");
+
+  // Forzar X grande y por encima (TV cursor a veces “tapa” botones pequeños)
+  function ensureCloseBtnTop() {
+    if (!closeBtn || !modalCard) return;
+    modalCard.style.position = "relative";
+    closeBtn.style.position = "absolute";
+    closeBtn.style.top = "10px";
+    closeBtn.style.right = "10px";
+    closeBtn.style.width = "72px";
+    closeBtn.style.height = "72px";
+    closeBtn.style.fontSize = "30px";
+    closeBtn.style.lineHeight = "72px";
+    closeBtn.style.textAlign = "center";
+    closeBtn.style.zIndex = "2147483647";
+    closeBtn.style.pointerEvents = "auto";
+    closeBtn.style.touchAction = "manipulation";
+  }
+
+  const close = (e) => {
+    e?.preventDefault?.();
+    e?.stopPropagation?.();
+    closeModal();
+  };
+
+  // Click directo en la X
+  if (closeBtn) {
+    closeBtn.addEventListener("click", close);
+    closeBtn.addEventListener("pointerdown", (e) => { e.stopPropagation(); }); // evita que “caiga” al modalCard
+    closeBtn.addEventListener("pointerup", close, true);
+    closeBtn.addEventListener("touchend", close, true);
+  }
+
+  // Click fuera de la tarjeta (fondo)
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target && e.target.id === "modal") closeModal();
     });
+    modal.addEventListener("pointerup", (e) => {
+      if (e.target && e.target.id === "modal") closeModal();
+    }, true);
   }
-  }, 300);
-}
 
-function getDirFromKeyEvent(e) {
-  const key = e.key || "";
-  const code = e.code || "";
-  const kc = e.keyCode;
+  // Zona caliente: esquina superior derecha de la tarjeta (por si la X queda “tapada”)
+  if (modalCard) {
+    modalCard.addEventListener("pointerup", (e) => {
+      const modalOpen = !modal.classList.contains("hidden");
+      if (!modalOpen) return;
 
-  // Android/Google TV suele mandar DPAD_*
-  if (key === "DPAD_UP" || code === "DPAD_UP") return "up";
-  if (key === "DPAD_DOWN" || code === "DPAD_DOWN") return "down";
-  if (key === "DPAD_LEFT" || code === "DPAD_LEFT") return "left";
-  if (key === "DPAD_RIGHT" || code === "DPAD_RIGHT") return "right";
+      const r = modalCard.getBoundingClientRect();
+      const hotW = Math.min(140, r.width * 0.28);
+      const hotH = Math.min(140, r.height * 0.28);
 
-  // Navegadores normales
-  if (key === "ArrowUp" || key === "Up" || code === "ArrowUp" || kc === 38) return "up";
-  if (key === "ArrowDown" || key === "Down" || code === "ArrowDown" || kc === 40) return "down";
-  if (key === "ArrowLeft" || key === "Left" || code === "ArrowLeft" || kc === 37) return "left";
-  if (key === "ArrowRight" || key === "Right" || code === "ArrowRight" || kc === 39) return "right";
+      const inHotZone =
+        e.clientX >= (r.right - hotW) &&
+        e.clientX <= r.right &&
+        e.clientY >= r.top &&
+        e.clientY <= (r.top + hotH);
 
-  return null;
-}
+      if (inHotZone) closeModal();
+    }, true);
+  }
 
-function isOkKey(e) {
-  const key = e.key || "";
-  const code = e.code || "";
-  const kc = e.keyCode;
+  // Navegación con teclado para PC (no estorba en TV cursor)
+  document.addEventListener("keydown", (e) => {
+    const modalOpen = !modal.classList.contains("hidden");
+    if (modalOpen) {
+      if (e.key === "Escape" || e.key === "Backspace") {
+        e.preventDefault();
+        closeModal();
+      }
+      return;
+    }
 
-  // OK/Center en TV
-  if (key === "DPAD_CENTER" || code === "DPAD_CENTER") return true;
+    if (document.activeElement === $("#search") && e.key === "ArrowDown") {
+      const first = $$(".card")[0];
+      if (first) {
+        e.preventDefault();
+        first.focus();
+        first.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      return;
+    }
 
-  // Enter normal
-  return key === "Enter" || code === "Enter" || kc === 13;
-}
+    const active = document.activeElement;
+    if (!active || !active.classList.contains("card")) return;
 
-function isBackKey(e) {
-  const key = e.key || "";
-  const code = e.code || "";
-  const kc = e.keyCode;
+    const cards = Array.from($$(".card"));
+    const fromIndex = parseInt(active.dataset.index, 10);
+    if (Number.isNaN(fromIndex)) return;
 
-  // Android TV Back suele ser keyCode 4
-  return key === "Backspace" || key === "Escape" || key === "BrowserBack" || code === "BrowserBack" || kc === 4;
-}
-
-document.addEventListener("keydown", (e) => {
-
-  const modalOpen = !$("#modal").classList.contains("hidden");
-
-  // --- Modal: Back/Escape cierra ---
-  if (modalOpen) {
-    if (isBackKey(e)) {
+    if (e.key === "Enter") {
       e.preventDefault();
-      e.stopPropagation();
-      closeModal();
+      openModal(filtered[fromIndex], fromIndex);
+      return;
     }
-    return;
-  }
 
-  // Detectar dirección / OK
-  const dir = getDirFromKeyEvent(e);
-  const ok = isOkKey(e);
+    const dir =
+      e.key === "ArrowLeft" ? "left" :
+      e.key === "ArrowRight" ? "right" :
+      e.key === "ArrowUp" ? "up" :
+      e.key === "ArrowDown" ? "down" :
+      null;
 
-  // Si es tecla de mando que nos interesa, la “capturamos” para que no la robe el navegador/TV
-  if (dir || ok || isBackKey(e)) {
+    if (!dir) return;
+
     e.preventDefault();
-    e.stopPropagation();
-  } else {
-    return; // no es una tecla de navegación
-  }
-
-  // --- Si estás en buscador y pulsas abajo: saltar a la primera card ---
-  if (document.activeElement === $("#search")) {
-    if (dir === "down") {
-      const first = $$(".card")[0];
-      if (first) {
-        first.focus();
-        first.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-      return;
+    const next = findNextByGeometry(active, cards, dir);
+    if (next) {
+      next.focus();
+      next.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
     }
-    // opcional: si pulsas OK en buscador, baja también
-    if (ok) {
-      const first = $$(".card")[0];
-      if (first) {
-        first.focus();
-        first.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-      return;
-    }
-  }
+  });
 
-  const active = document.activeElement;
-  if (!active || !active.classList.contains("card")) return;
+  // Asegurar la X arriba desde el inicio
+  ensureCloseBtnTop();
 
-  const cards = Array.from($$(".card"));
-  const fromIndex = parseInt(active.dataset.index, 10);
-  if (Number.isNaN(fromIndex)) return;
+  // Y cada vez que se abra el modal (por si el navegador “recoloca” cosas)
+  const _open = openModal;
+  openModal = async function(p, index) {
+    ensureCloseBtnTop();
+    return _open(p, index);
+  };
+}
 
-  if (ok) {
-    openModal(filtered[fromIndex], fromIndex);
-    return;
-  }
-
-  if (!dir) return;
-
-  const next = findNextByGeometry(active, cards, dir);
-  if (next) {
-    next.focus();
-    next.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
-  }
-}, true);
-
-// Busca la tarjeta “más natural” en la dirección pedida usando posiciones reales
+// Geometría para PC
 function findNextByGeometry(fromEl, allEls, dir) {
   const from = fromEl.getBoundingClientRect();
   const fromCx = (from.left + from.right) / 2;
@@ -318,7 +362,6 @@ function findNextByGeometry(fromEl, allEls, dir) {
     const cx = (r.left + r.right) / 2;
     const cy = (r.top + r.bottom) / 2;
 
-    // Filtrar candidatos por dirección
     if (dir === "down" && cy <= fromCy + 1) continue;
     if (dir === "up" && cy >= fromCy - 1) continue;
     if (dir === "right" && cx <= fromCx + 1) continue;
@@ -327,9 +370,8 @@ function findNextByGeometry(fromEl, allEls, dir) {
     const dx = cx - fromCx;
     const dy = cy - fromCy;
 
-    // Score: prioriza alineación en el eje perpendicular, y luego distancia en el eje principal
     const score =
-      dir === "down" || dir === "up"
+      (dir === "down" || dir === "up")
         ? Math.abs(dx) * 3 + Math.abs(dy)
         : Math.abs(dy) * 3 + Math.abs(dx);
 
@@ -341,6 +383,10 @@ function findNextByGeometry(fromEl, allEls, dir) {
 
   return best;
 }
+
+/* =========================
+   Modal
+========================= */
 
 async function openModal(p, index) {
   lastFocusedIndex = index;
@@ -356,54 +402,39 @@ async function openModal(p, index) {
   posterEl.style.backgroundPosition = "";
 
   $("#modal").classList.remove("hidden");
-  $("#closeBtn").focus();
+
+  // En TV cursor no siempre hay foco real, pero no estorba:
+  $("#closeBtn").focus?.();
 
   try {
-
-    // --- SKIP manual ---
-    if (typeof TMDB_SKIP !== "undefined" && TMDB_SKIP.has(p.titulo)) {
-      if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
-        review.missing.add(p.titulo);
-      }
+    if (TMDB_SKIP.has(p.titulo)) {
+      if (REVIEW_MODE) review.missing.add(p.titulo);
       return;
     }
 
-    // --- Buscar en TMDB (con override si existe) ---
     const match = await searchTmdb(p.titulo);
-
     if (!match?.id) {
-      if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
-        review.missing.add(p.titulo);
-      }
+      if (REVIEW_MODE) review.missing.add(p.titulo);
       return;
     }
 
     const details = await getTmdbDetails({ type: match.type || "movie", id: match.id });
-
     if (!details) {
-      if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
-        review.missing.add(p.titulo);
-      }
+      if (REVIEW_MODE) review.missing.add(p.titulo);
       return;
     }
 
-    // --- Poster grande ---
     if (details.poster_path) {
       posterEl.textContent = "";
       posterEl.style.backgroundImage = `url(${IMG_BASE_MODAL}${details.poster_path})`;
       posterEl.style.backgroundSize = "cover";
       posterEl.style.backgroundPosition = "center";
     } else {
-      if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
-        review.missing.add(p.titulo);
-      }
+      if (REVIEW_MODE) review.missing.add(p.titulo);
     }
 
-    // --- Datos extra ---
-    const year = details.release_date
-      ? details.release_date.slice(0, 4)
-      : "";
-
+    const date = details.release_date || details.first_air_date || "";
+    const year = date ? date.slice(0, 4) : "";
     const sinopsis = details.overview || "";
 
     const cast = details.credits?.cast
@@ -416,15 +447,10 @@ async function openModal(p, index) {
       cast ? `\n\nReparto: ${cast}` : ""
     ].filter(Boolean).join("");
 
-    $("#note").textContent =
-      (p.nota ? p.nota + "\n" : "") + extra;
-
+    $("#note").textContent = (p.nota ? p.nota + "\n" : "") + extra;
   } catch (err) {
     console.error("TMDB error:", err);
-
-    if (typeof REVIEW_MODE !== "undefined" && REVIEW_MODE) {
-      review.missing.add(p.titulo);
-    }
+    if (REVIEW_MODE) review.missing.add(p.titulo);
   }
 }
 
@@ -432,49 +458,33 @@ function closeModal() {
   const modal = $("#modal");
   if (!modal.classList.contains("hidden")) {
     modal.classList.add("hidden");
-    const previous = document.querySelector(`[data-index="${lastFocusedIndex}"]`);
-    if (previous) previous.focus();
+    const prev = document.querySelector(`[data-index="${lastFocusedIndex}"]`);
+    prev?.focus?.();
   }
 }
 
-function normalize(s) {
-  return (s || "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9 ]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function escapeHtml(s) {
-  return (s ?? "").replace(/[&<>"']/g, (c) =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[c])
-  );
-}
+/* =========================
+   TMDB
+========================= */
 
 async function searchTmdb(title) {
-  // 0) Skip manual
-  if (typeof TMDB_SKIP !== "undefined" && TMDB_SKIP.has(title)) return null;
+  if (TMDB_SKIP.has(title)) return null;
 
-  // 1) Override manual (movie o tv)
+  // overrides
   if (TMDB_OVERRIDES && TMDB_OVERRIDES[title]) {
     const ov = TMDB_OVERRIDES[title];
 
-    // Si es número -> movie
     if (typeof ov === "number") {
       const details = await getTmdbDetails({ type: "movie", id: ov });
       return { id: ov, type: "movie", poster_path: details?.poster_path || null };
     }
 
-    // Si es objeto -> respeta type
     const type = ov.type || "movie";
     const id = ov.id;
     const details = await getTmdbDetails({ type, id });
     return { id, type, poster_path: details?.poster_path || null };
   }
 
-  // 2) Cache normal por búsqueda
   const key = normalize(title);
   if (SEARCH_CACHE.has(key)) return SEARCH_CACHE.get(key);
 
@@ -517,5 +527,9 @@ async function loadPosterForCard(p, cardEl) {
   posterDiv.style.backgroundSize = "cover";
   posterDiv.style.backgroundPosition = "center";
 }
+
+/* =========================
+   Start
+========================= */
 
 load();
