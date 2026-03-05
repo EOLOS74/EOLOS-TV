@@ -184,6 +184,16 @@ function render() {
       }
     }, 1500);
   }
+  setTimeout(() => {
+  const firstCard = document.querySelector(".card");
+  if (firstCard) {
+    firstCard.focus();
+    firstCard.scrollIntoView({
+      behavior: "instant",
+      block: "center"
+    });
+  }
+  }, 300);
 }
 
 function setupEvents() {
@@ -246,16 +256,14 @@ function setupEvents() {
       return;
     }
 
-    const dir =
-      e.key === "ArrowLeft"
-        ? "left"
-        : e.key === "ArrowRight"
-        ? "right"
-        : e.key === "ArrowUp"
-        ? "up"
-        : e.key === "ArrowDown"
-        ? "down"
-        : null;
+   const key = e.key || e.code;
+
+   const dir =
+    key === "ArrowLeft" || key === "Left" || e.keyCode === 37 ? "left" :
+    key === "ArrowRight" || key === "Right" || e.keyCode === 39 ? "right" :
+    key === "ArrowUp" || key === "Up" || e.keyCode === 38 ? "up" :
+    key === "ArrowDown" || key === "Down" || e.keyCode === 40 ? "down" :
+    null;
 
     if (!dir) return;
 
